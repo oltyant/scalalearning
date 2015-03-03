@@ -1,0 +1,27 @@
+update
+exit
+reload
+moduleSettings
+moduleConfigurations
+inspect moduleConfigurations
+update
+version
+settings
+sbtBinaryVersion
+exit
+sbtBinaryVersion
+exit
+moduleConfigurations
+inspect sbtinaction/
+inspect tree moduleConfigurations
+inspect sbtinaction/*
+inspect sbtinaction:moduleConfiguration
+inspect sbtinaction:moduleConfigurations
+reload
+update
+exit
+update
+exit
+reload
+update
+exit

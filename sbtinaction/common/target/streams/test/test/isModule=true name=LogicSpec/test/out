@@ -1,0 +1,9 @@
+[0m[[0minfo[0m] [0mLogicSpec[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37mThe matchLikeliHood method  should[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[32m+[0m be 100% when all attributes match[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[32m+[0m be 0% when none of the attributes match[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0mTotal for specification LogicSpec[0m
+[0m[[0minfo[0m] [0m[36mFinished in 60 ms[0m[0m
+[0m[[0minfo[0m] [0m[36m[0m[36m2 examples, 0 failure, 0 error[0m[0m
