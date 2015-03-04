@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, it, compile-internal, runtime-internal, test-internal, it-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150305000201"/>
+		date="20150305000828"/>
 	<dependencies>
 		<module organisation="org.scalacheck" name="scalacheck_2.10">
 			<revision name="1.12.2" status="release" pubdate="20150206000447" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalacheck.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="7">

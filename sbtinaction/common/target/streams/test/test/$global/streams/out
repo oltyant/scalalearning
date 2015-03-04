@@ -1,25 +1,28 @@
 [0m[[0mdebug[0m] [0mForking tests - parallelism = false[0m
 [0m[[0mdebug[0m] [0mCreate a single-thread test executor[0m
-[0m[[0mdebug[0m] [0mRunner for sbt.FrameworkWrapper produced 1 initial tasks for 1 tests.[0m
+[0m[[0mdebug[0m] [0mRunner for sbt.FrameworkWrapper produced 2 initial tasks for 2 tests.[0m
 [0m[[0mdebug[0m] [0m  Running TaskDef(org.preownedkittens.LogicSpecification, sbt.ForkMain$SubclassFingerscan@3880b361, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0m+ Logic.matchLikeliHood: OK, passed 5000 tests.[0m
+[0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(org.preownedkittens.LogicSpecification, sbt.ForkMain$SubclassFingerscan@6f19e88d, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0m+ Logic.matchLikeliHood: OK, passed 5000 tests.[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 1 events.[0m
 [0m[[0mdebug[0m] [0mFramework implementation 'org.specs2.runner.Specs2Framework' not present.[0m
 [0m[[0mdebug[0m] [0mRunner for sbt.FrameworkWrapper produced 1 initial tasks for 1 tests.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(org.preownedkittens.LogicSpec, sbt.ForkMain$SubclassFingerscan@6f19e88d, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(org.preownedkittens.LogicSpec, sbt.ForkMain$SubclassFingerscan@7bbfabdf, false, [SuiteSelector])[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 3 events.[0m
 [0m[[0mdebug[0m] [0mRunner for org.scalatest.tools.Framework produced 0 initial tasks for 0 tests.[0m
 [0m[[0mdebug[0m] [0mRunner for com.novocode.junit.JUnitFramework produced 1 initial tasks for 1 tests.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(org.preownedkittens.LogicJavaTest, sbt.ForkMain$AnnotatedFingerscan@52849795, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(org.preownedkittens.LogicJavaTest, sbt.ForkMain$AnnotatedFingerscan@50405a3c, false, [SuiteSelector])[0m
 [0m[[0mdebug[0m] [0m[34mTest run started[0m[0m
 [0m[[0mdebug[0m] [0mTest org.preownedkittens.[33mLogicJavaTest[0m.[36mtestKitte[0m started[0m
-[0m[[0mdebug[0m] [0mTest org.preownedkittens.[33mLogicJavaTest[0m.[36mtestKitte[0m finished, took 0.003 sec[0m
-[0m[[0mdebug[0m] [0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 1 total, 0.024s[0m[0m
+[0m[[0mdebug[0m] [0mTest org.preownedkittens.[33mLogicJavaTest[0m.[36mtestKitte[0m finished, took 0.002 sec[0m
+[0m[[0mdebug[0m] [0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 1 total, 0.015s[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 1 events.[0m
 [0m[[0mdebug[0m] [0mSummary for ScalaCheck not available.[0m
 [0m[[0mdebug[0m] [0mSummary for specs2 not available.[0m
 [0m[[0minfo[0m] [0mScalaTest[0m
-[0m[[0minfo[0m] [0m[36mRun completed in 10 seconds, 380 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 9 seconds, 944 milliseconds.[0m[0m
 [0m[[0minfo[0m] [0m[36mTotal number of tests run: 0[0m[0m
 [0m[[0minfo[0m] [0m[36mSuites: completed 0, aborted 0[0m[0m
 [0m[[0minfo[0m] [0m[36mTests: succeeded 0, failed 0, canceled 0, ignored 0, pending 0[0m[0m

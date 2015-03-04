@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="it"
 		confs="compile, runtime, test, provided, optional, it, compile-internal, runtime-internal, test-internal, it-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150305000201"/>
+		date="20150305000828"/>
 	<dependencies>
 		<module organisation="org.seleniumhq.selenium" name="selenium-java">
 			<revision name="2.31.0" status="release" pubdate="20130227225303" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="10">
