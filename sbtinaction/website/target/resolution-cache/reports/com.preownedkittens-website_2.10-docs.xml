@@ -6,8 +6,8 @@
 		module="website_2.10"
 		revision="1.0"
 		conf="docs"
-		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150302233223"/>
+		confs="compile, runtime, test, provided, optional, it, compile-internal, runtime-internal, test-internal, it-internal, plugin, sources, docs, pom, scala-tool"
+		date="20150305000208"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>

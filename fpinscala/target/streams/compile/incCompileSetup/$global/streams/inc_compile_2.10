@@ -1,0 +1,511 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /root/scalalearning/fpinscala/target/scala-2.10/classes
+compile options:
+0 items
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.10.4
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+54 items
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/FPInScalaParametricPolymorphism$$anonfun$compose$1.class
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/FPInScalaParametricPolymorphism$$anonfun$curry$1$$anonfun$apply$1.class
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/FPInScalaParametricPolymorphism$$anonfun$curry$1.class
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/FPInScalaParametricPolymorphism$$anonfun$curryShorterForm$1$$anonfun$apply$2.class
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/FPInScalaParametricPolymorphism$$anonfun$curryShorterForm$1.class
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/FPInScalaParametricPolymorphism$$anonfun$partial1$1.class
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/FPInScalaParametricPolymorphism$$anonfun$uncurry$1.class
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/FPInScalaParametricPolymorphism$.class
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/FPInScalaParametricPolymorphism.class
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/MyModule$$anonfun$main$1.class
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/MyModule$.class
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/MyModule.class
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/errorhandling/None$.class
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/errorhandling/None.class
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/errorhandling/Option$$anonfun$flatMap$1.class
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/errorhandling/Option$class.class
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/errorhandling/Option.class
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/errorhandling/Some$.class
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/errorhandling/Some.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Cons$.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Cons.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$add1$1.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$append$1.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$doubleToStringFold$1.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$filter$1.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$filterFM$1.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$flatMap$1.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$flatten$1.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$foldRight2$1.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$length$1.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$map$1.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$product2$1.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$product3$1.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$reverse$1.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$sum2$1.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$sum3$1.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Nil$.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Nil.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Branch$.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Branch.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Leaf$.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Leaf.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Tree$$anonfun$depthViaFold$1.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Tree$$anonfun$depthViaFold$2.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Tree$$anonfun$mapViaFold$1.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Tree$$anonfun$mapViaFold$2.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Tree$$anonfun$maxViaFold$1.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Tree$$anonfun$maxViaFold$2.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Tree$$anonfun$sizeViaFold$1.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Tree$$anonfun$sizeViaFold$2.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Tree$.class
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> /root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Tree.class
+binary dependencies:
+10 items
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> /opt/jdk1.8.0_25/jre/lib/rt.jar
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> /root/.sbt/boot/scala-2.10.4/lib/scala-library.jar
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> /opt/jdk1.8.0_25/jre/lib/rt.jar
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> /root/.sbt/boot/scala-2.10.4/lib/scala-library.jar
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> /opt/jdk1.8.0_25/jre/lib/rt.jar
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> /root/.sbt/boot/scala-2.10.4/lib/scala-library.jar
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /opt/jdk1.8.0_25/jre/lib/rt.jar
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> /root/.sbt/boot/scala-2.10.4/lib/scala-library.jar
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> /opt/jdk1.8.0_25/jre/lib/rt.jar
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> /root/.sbt/boot/scala-2.10.4/lib/scala-library.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+54 items
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> FPInScalaParametricPolymorphism
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> FPInScalaParametricPolymorphism$
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> FPInScalaParametricPolymorphism$$anonfun$compose$1
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> FPInScalaParametricPolymorphism$$anonfun$curry$1
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> FPInScalaParametricPolymorphism$$anonfun$curry$1$$anonfun$apply$1
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> FPInScalaParametricPolymorphism$$anonfun$curryShorterForm$1
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> FPInScalaParametricPolymorphism$$anonfun$curryShorterForm$1$$anonfun$apply$2
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> FPInScalaParametricPolymorphism$$anonfun$partial1$1
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> FPInScalaParametricPolymorphism$$anonfun$uncurry$1
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> MyModule
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> MyModule$
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> MyModule$$anonfun$main$1
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> errorhandling.None
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> errorhandling.None$
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> errorhandling.Option
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> errorhandling.Option$$anonfun$flatMap$1
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> errorhandling.Option$class
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> errorhandling.Some
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> errorhandling.Some$
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.Cons
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.Cons$
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.List
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.List$
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.List$$anonfun$add1$1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.List$$anonfun$append$1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.List$$anonfun$doubleToStringFold$1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.List$$anonfun$filter$1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.List$$anonfun$filterFM$1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.List$$anonfun$flatMap$1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.List$$anonfun$flatten$1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.List$$anonfun$foldRight2$1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.List$$anonfun$length$1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.List$$anonfun$map$1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.List$$anonfun$product2$1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.List$$anonfun$product3$1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.List$$anonfun$reverse$1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.List$$anonfun$sum2$1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.List$$anonfun$sum3$1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.Nil
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice.datastructures.Nil$
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> practice.datastructures.Branch
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> practice.datastructures.Branch$
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> practice.datastructures.Leaf
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> practice.datastructures.Leaf$
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> practice.datastructures.Tree
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> practice.datastructures.Tree$
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> practice.datastructures.Tree$$anonfun$depthViaFold$1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> practice.datastructures.Tree$$anonfun$depthViaFold$2
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> practice.datastructures.Tree$$anonfun$mapViaFold$1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> practice.datastructures.Tree$$anonfun$mapViaFold$2
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> practice.datastructures.Tree$$anonfun$maxViaFold$1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> practice.datastructures.Tree$$anonfun$maxViaFold$2
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> practice.datastructures.Tree$$anonfun$sizeViaFold$1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> practice.datastructures.Tree$$anonfun$sizeViaFold$2
+used names:
+249 items
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> +
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> -
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> <init>
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> ==
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> >=
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> A
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> Any
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> AnyRef
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> Array
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> B
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> Boolean
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> C
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> FPInScalaParametricPolymorphism
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> Function1
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> Function2
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> Int
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> Nothing
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> Predef
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> String
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> _root_
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> a
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> apply
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> arr
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> b
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> f
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> g
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> go
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> i
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> key
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> length
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> loop
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> n
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> ordered
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> scala
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> unary_!
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> *
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> +
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> -
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> <
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> <=
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> <init>
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> <repeated>
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> AnyRef
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> Function1
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> Int
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> MyModule
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> Predef
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> String
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> StringContext
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> _root_
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> acc
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> acc1
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> acc2
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> act
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> apply
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> f
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> factorial
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> formatFunction
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> go
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> n
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> name
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> println
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> s
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> scala
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> unary_-
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> &&
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> <byname>
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> <init>
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> ==
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> A
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> Any
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> AnyRef
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> B
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> Boolean
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> Either
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> Function1
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> None
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> Nothing
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> Option
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> Product
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> ScalaRunTime
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> Serializable
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> Some
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> _hashCode
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> _root_
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> _toString
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> a
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> apply
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> asInstanceOf
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> default
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> eq
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> errorhandling
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> f
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> get
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> getOrElse
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> isInstanceOf
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> map
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> ob
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> runtime
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> scala
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> toString
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> typedProductIterator
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> ||
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> !=
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> &&
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> *
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> +
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> -
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> <init>
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> <repeated>
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> ==
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> >
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> A
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> Any
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> AnyRef
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> B
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> Boolean
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> C
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> Cons
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> Double
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> Function1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> Function2
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> Int
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> List
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> Nil
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> NoSuchElementException
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> None
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> Nothing
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> Predef
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> Product
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> ScalaRunTime
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> Serializable
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> String
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> _1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> _2
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> _hashCode
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> _root_
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> _toString
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> a
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> acc
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> add
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> apply
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> as
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> asInstanceOf
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> b
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> bs
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> datastructures
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> dropElegant
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> dropWhileElegant
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> e
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> eq
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> f
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> flatMap
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> foldLeft
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> foldLeft2
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> foldRight
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> foldRight2
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> h
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> h2
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> head
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> hs
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> i
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> isEmpty
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> isInstanceOf
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> l
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> l1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> l2
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> ll
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> loop
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> ls
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> mergeLists
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> n
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> ne
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> orig
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> package
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> practice
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> product
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> reverse
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> runtime
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> s
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> scala
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> sl
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> sub
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> sum
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> sup
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> t
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> t2
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> tail
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> toString
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> ts
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> typedProductIterator
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> x
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> y
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> z
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> zipWith
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> ||
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> &&
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> +
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> <init>
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> ==
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> A
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> Any
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> AnyRef
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> B
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> Branch
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> Function1
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> Function2
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> Int
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> Leaf
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> None
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> Nothing
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> Predef
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> Product
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> ScalaRunTime
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> Serializable
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> Tree
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> _hashCode
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> _root_
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> _toString
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> a
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> apply
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> asInstanceOf
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> b
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> datastructures
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> depth
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> eq
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> f
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> fold
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> g
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> intWrapper
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> isInstanceOf
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> l
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> left
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> map
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> max
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> maximum
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> practice
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> r
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> right
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> root
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> runtime
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> scala
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> size
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> toString
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> tree
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> typedProductIterator
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> value
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> x
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> ||
+product stamps:
+54 items
+/root/scalalearning/fpinscala/target/scala-2.10/classes/FPInScalaParametricPolymorphism$$anonfun$compose$1.class -> lastModified(1425510139000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/FPInScalaParametricPolymorphism$$anonfun$curry$1$$anonfun$apply$1.class -> lastModified(1425510139000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/FPInScalaParametricPolymorphism$$anonfun$curry$1.class -> lastModified(1425510139000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/FPInScalaParametricPolymorphism$$anonfun$curryShorterForm$1$$anonfun$apply$2.class -> lastModified(1425510139000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/FPInScalaParametricPolymorphism$$anonfun$curryShorterForm$1.class -> lastModified(1425510139000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/FPInScalaParametricPolymorphism$$anonfun$partial1$1.class -> lastModified(1425510139000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/FPInScalaParametricPolymorphism$$anonfun$uncurry$1.class -> lastModified(1425510139000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/FPInScalaParametricPolymorphism$.class -> lastModified(1425510139000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/FPInScalaParametricPolymorphism.class -> lastModified(1425510139000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/MyModule$$anonfun$main$1.class -> lastModified(1425510139000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/MyModule$.class -> lastModified(1425510139000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/MyModule.class -> lastModified(1425510139000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/errorhandling/None$.class -> lastModified(1425510139000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/errorhandling/None.class -> lastModified(1425510139000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/errorhandling/Option$$anonfun$flatMap$1.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/errorhandling/Option$class.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/errorhandling/Option.class -> lastModified(1425510139000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/errorhandling/Some$.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/errorhandling/Some.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Branch$.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Branch.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Cons$.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Cons.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Leaf$.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Leaf.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$add1$1.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$append$1.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$doubleToStringFold$1.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$filter$1.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$filterFM$1.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$flatMap$1.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$flatten$1.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$foldRight2$1.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$length$1.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$map$1.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$product2$1.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$product3$1.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$reverse$1.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$sum2$1.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$$anonfun$sum3$1.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List$.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/List.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Nil$.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Nil.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Tree$$anonfun$depthViaFold$1.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Tree$$anonfun$depthViaFold$2.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Tree$$anonfun$mapViaFold$1.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Tree$$anonfun$mapViaFold$2.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Tree$$anonfun$maxViaFold$1.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Tree$$anonfun$maxViaFold$2.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Tree$$anonfun$sizeViaFold$1.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Tree$$anonfun$sizeViaFold$2.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Tree$.class -> lastModified(1425510140000)
+/root/scalalearning/fpinscala/target/scala-2.10/classes/practice/datastructures/Tree.class -> lastModified(1425510140000)
+source stamps:
+5 items
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> hash(8082b7fa639a80545cbab914a10873677cb50d50)
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> hash(29f03ca7c8ee82e37747f92f757cf8fd653ed6ad)
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> hash(8ac17284d36d661e63689bfb71bb7530dc09c1e6)
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> hash(f10493464b9d195fb8d13ac9a5573a1a3a28c49e)
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> hash(9487f4c5e33c3f924824db0cc53c5c6bce418509)
+binary stamps:
+2 items
+/opt/jdk1.8.0_25/jre/lib/rt.jar -> lastModified(1411000934000)
+/root/.sbt/boot/scala-2.10.4/lib/scala-library.jar -> lastModified(1395179187000)
+class names:
+2 items
+/opt/jdk1.8.0_25/jre/lib/rt.jar -> java.lang.Object
+/root/.sbt/boot/scala-2.10.4/lib/scala-library.jar -> scala.Serializable
+internal apis:
+5 items
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHDPo+EVAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAHHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cEVS06l0AAZub3RpZnlzcQB+AAwlRLzddAAEd2FpdHNxAH4ADMxtRYp0AA0kYXNJbnN0YW5jZU9mc3EAfgAMJoeMuXQAB2NvbXBvc2VzcQB+AAxg3iqkdAAIaXNTb3J0ZWRzcQB+AAygQ6VWdAAGZXF1YWxzc3EAfgAMm3ULs3QAB3VuY3VycnlzcQB+AAwGWfLfdAAMYXNJbnN0YW5jZU9mc3EAfgAMEISF8nQABWN1cnJ5c3EAfgAMYy+lKXQADHN5bmNocm9uaXplZHNxAH4ADMbl93p0AA0kaXNJbnN0YW5jZU9mc3EAfgAMp5rZ7XQACW5vdGlmeUFsbHNxAH4ADNuSq3R0AB9GUEluU2NhbGFQYXJhbWV0cmljUG9seW1vcnBoaXNtc3EAfgAMemz55XQACHBhcnRpYWwxc3EAfgAMUYkvNnQADGlzSW5zdGFuY2VPZnNxAH4ADD14wWZ0ABBjdXJyeVNob3J0ZXJGb3Jtc3EAfgAM97YqtHQAAj09c3EAfgAMcbPVK3QACWZpbmRGaXJzdHNxAH4ADJkXxYZ0AAVjbG9uZXNxAH4ADICGFhh0AAh0b1N0cmluZ3NxAH4ADKXhL+N0AAIhPXNxAH4ADJGMVlp0AAhnZXRDbGFzc3NxAH4ADBOOVK90ABZmaW5kRmlyc3RJblN0cmluZ0FycmF5c3EAfgAMzCnQvHQAAm5lc3EAfgAM2uaapXQAAmVxc3EAfgAMpKKaY3QAAiMjc3EAfgAMiv/jZ3QACGZpbmFsaXplc3EAfgAMZgfd+nQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AT3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHEAfgAndXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AZ3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AZgBwc3EAfgBrc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AE9MAAlpbmhlcml0ZWRxAH4AT0wAB3BhcmVudHNxAH4AT3hxAH4Ab3NxAH4AZgBwc3EAfgBrdXEAfgBKAAAAAHNxAH4AZgBwc3EAfgBrdXEAfgBKAAAAAHNxAH4AZgBwc3EAfgBrdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBudAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBuc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCLdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCMc3EAfgB/dAADQW55c3EAfgCDc3EAfgCGdXEAfgCJAAAAAnNxAH4Ai3QABXNjYWxhcQB+AJJ1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABS+cGaVJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdAA3L3Jvb3Qvc2NhbGFsZWFybmluZy9mcGluc2NhbGEvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFICCt/pjmoBUXLq5FKEIc2d8tQ1Q
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBS34H1AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAGXNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cMRnB1h0AAZub3RpZnlzcQB+AAz2gRGUdAADZmlic3EAfgAMlZjkFnQACWZhY3RvcmlhbHNxAH4ADH3y1HB0AAR3YWl0c3EAfgAM5GuUkHQADSRhc0luc3RhbmNlT2ZzcQB+AAxxSYV+dAAGZXF1YWxzc3EAfgAMBneJ8HQADGFzSW5zdGFuY2VPZnNxAH4ADDZI06J0AAxzeW5jaHJvbml6ZWRzcQB+AAzN6t5idAAOZm9ybWF0RnVuY3Rpb25zcQB+AAxLlPJJdAANJGlzSW5zdGFuY2VPZnNxAH4ADCUXli50AARtYWluc3EAfgAM3Yvh6HQACW5vdGlmeUFsbHNxAH4ADIeVbs50AAxpc0luc3RhbmNlT2ZzcQB+AAwOXn3gdAACPT1zcQB+AAyrtTmjdAAFY2xvbmVzcQB+AAwHCDY1dAAIdG9TdHJpbmdzcQB+AAw7l5nmdAACIT1zcQB+AAwmLe1SdAAIZ2V0Q2xhc3NzcQB+AAy3TQn9dAADYWJzc3EAfgAMmiyj8XQAAm5lc3EAfgAMW1lgO3QACE15TW9kdWxlc3EAfgAM1y2+R3QAAmVxc3EAfgAMq9gfMXQAAiMjc3EAfgAMPx+N4XQACGZpbmFsaXplc3EAfgAMiKn2AHQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4ASXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHEAfgA3dXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AYXhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AYABwc3EAfgBlc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AElMAAlpbmhlcml0ZWRxAH4ASUwAB3BhcmVudHNxAH4ASXhxAH4AaXNxAH4AYABwc3EAfgBldXEAfgBEAAAAAHNxAH4AYABwc3EAfgBldXEAfgBEAAAAAHNxAH4AYABwc3EAfgBldXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBodAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBoc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCFdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCGc3EAfgB5dAADQW55c3EAfgB9c3EAfgCAdXEAfgCDAAAAAnNxAH4AhXQABXNjYWxhcQB+AIx1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABS+cGaVJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdAA3L3Jvb3Qvc2NhbGFsZWFybmluZy9mcGluc2NhbGEvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFCnwPKfI7oLjd0f5L3V8+P1lPtat
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCKPMfsAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJnNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cBNYGf90AAZub3RpZnlzcQB+AAyJ6w+MdAAEd2FpdHNxAH4ADIE4uux0AA0kYXNJbnN0YW5jZU9mc3EAfgAMwInow3QAA21hcHNxAH4ADDMRU4x0AAxwcm9kdWN0QXJpdHlzcQB+AAxoBf/ndAAGZXF1YWxzc3EAfgAMFRfyQXQADGFzSW5zdGFuY2VPZnNxAH4ADKOwc3F0AAxzeW5jaHJvbml6ZWRzcQB+AAxu1yV9dAANJGlzSW5zdGFuY2VPZnNxAH4ADBDG0YB0AAhjYW5FcXVhbHNxAH4ADCrzQXh0AA1wcm9kdWN0UHJlZml4c3EAfgAM2V6liXQABm9yRWxzZXNxAH4ADPJtc5N0AAlub3RpZnlBbGxzcQB+AAyp7qnndAALcmVhZFJlc29sdmVzcQB+AAwfSg8FdAAMaXNJbnN0YW5jZU9mc3EAfgAMl+fgxHQABmZpbHRlcnNxAH4ADPJPQ1F0AAY8aW5pdD5zcQB+AAx0EOWndAAHZmxhdE1hcHNxAH4ADNt9xxJ0AAlnZXRPckVsc2VzcQB+AAxAFBy8dAACPT1zcQB+AAye0eREdAAFY2xvbmVzcQB+AAwk9jSfdAAEU29tZXNxAH4ADJzWrmp0AAYkaW5pdCRzcQB+AAzGnVcgdAAGT3B0aW9uc3EAfgAMUM8LcnQABGNvcHlzcQB+AAy5VX/XdAAETm9uZXNxAH4ADPB/OKF0AAh0b1N0cmluZ3NxAH4ADFsFF0B0AAIhPXNxAH4ADInsgM10AANnZXRzcQB+AAwomqVzdAAIZ2V0Q2xhc3NzcQB+AAw42tptdAAOY29weSRkZWZhdWx0JDFzcQB+AAzhJfbMdAACbmVzcQB+AAwSQ7uwdAACZXFzcQB+AAxIIyuOdAAPcHJvZHVjdEl0ZXJhdG9yc3EAfgAM+SXjDXQAAiMjc3EAfgAMZu9yGXQACGZpbmFsaXplc3EAfgAMEAr3FnQADnByb2R1Y3RFbGVtZW50c3EAfgAMyJonxXQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAA3NyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AY3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwCXQAFGVycm9yaGFuZGxpbmcuT3B0aW9udXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAFzcgAXeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXJnaVXb43KQawIABlsAC2Fubm90YXRpb25zcQB+AGhMAAJpZHEAfgANTAAKbG93ZXJCb3VuZHQAEEx4c2J0aS9hcGkvVHlwZTtbAA50eXBlUGFyYW1ldGVyc3EAfgBlTAAKdXBwZXJCb3VuZHEAfgB2TAAIdmFyaWFuY2V0ABRMeHNidGkvYXBpL1ZhcmlhbmNlO3hwdXEAfgBuAAAAAHQAFmVycm9yaGFuZGxpbmcuT3B0aW9uLkFzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwdAAHTm90aGluZ3NyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AfXNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AinVxAH4AcwAAAABzcQB+AHt0AANBbnlxAH4Ag35yABJ4c2J0aS5hcGkuVmFyaWFuY2UAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAlDb3ZhcmlhbnR+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cQB+AJN0AAVUcmFpdHVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQxAAAAAAAAAAACAAFMAAd2YWx1ZSQxcQB+AJx4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cQB+AH1zcQB+AJsAcHNxAH4AoHNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBjTAAJaW5oZXJpdGVkcQB+AGNMAAdwYXJlbnRzcQB+AGN4cQB+AH5zcQB+AJsAcHNxAH4AoHVxAH4AXgAAAABzcQB+AJsAcHNxAH4AoHVxAH4AXgAAAABzcQB+AJsAcHNxAH4AoHVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3EAfgB7dAAGT2JqZWN0c3EAfgCBc3EAfgCEdXEAfgCHAAAAA3NxAH4AiXQABGphdmFzcQB+AIl0AARsYW5ncQB+AI5zcQB+AHtxAH4AkXNxAH4AgXNxAH4AhHVxAH4AhwAAAAJzcQB+AIlxAH4AjHEAfgCOc3EAfgBgcQB+AG11cQB+AG4AAAAAc3EAfgBwAHQAEmVycm9yaGFuZGxpbmcuTm9uZXVxAH4AcwAAAAB+cQB+AJZ0AAZNb2R1bGV1cQB+AJkAAAAAc3EAfgCbAHBzcQB+AKBxAH4Ao3NxAH4AmwBwc3EAfgCgc3EAfgCmc3EAfgCbAHBzcQB+AKB1cQB+AF4AAAAAc3EAfgCbAHBzcQB+AKB1cQB+AF4AAAAAc3EAfgCbAHBzcQB+AKB1cQB+ALAAAAAHc3EAfgB7dAAMU2VyaWFsaXphYmxlc3EAfgCBc3EAfgCEdXEAfgCHAAAAAnNxAH4AiXEAfgCMcQB+AI5zcQB+AHtxAH4A13NxAH4AgXNxAH4AhHVxAH4AhwAAAANzcQB+AIlxAH4AuHNxAH4AiXQAAmlvcQB+AI5zcQB+AHt0AAdQcm9kdWN0cQB+ANhzcQB+AHt0AAZFcXVhbHNxAH4A2HNyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4AfFsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4AfXNxAH4Ae3QABk9wdGlvbnNxAH4AgXNxAH4AhHVxAH4AhwAAAAJzcQB+AIl0AA1lcnJvcmhhbmRsaW5ncQB+AI51cQB+ALAAAAABc3EAfgB7cQB+AIBxAH4A2HNxAH4Ae3EAfgCzc3EAfgCBc3EAfgCEdXEAfgCHAAAAA3NxAH4AiXEAfgC4c3EAfgCJcQB+ALpxAH4AjnNxAH4Ae3EAfgCRcQB+ANhzcQB+AGBxAH4AbXVxAH4AbgAAAABzcQB+AHAAdAASZXJyb3JoYW5kbGluZy5Tb21ldXEAfgBzAAAAAXNxAH4AdXVxAH4AbgAAAAB0ABRlcnJvcmhhbmRsaW5nLlNvbWUuQXEAfgB/dXEAfgBzAAAAAHEAfgCQcQB+AJR+cQB+AJZ0AAhDbGFzc0RlZnVxAH4AmQAAAABzcQB+AJsAcHNxAH4AoHEAfgCjc3EAfgCbAHBzcQB+AKBzcQB+AKZzcQB+AJsAcHNxAH4AoHVxAH4AXgAAAABzcQB+AJsAcHNxAH4AoHVxAH4AXgAAAABzcQB+AJsAcHNxAH4AoHVxAH4AsAAAAAdzcQB+AHtxAH4A13NxAH4AgXNxAH4AhHVxAH4AhwAAAAJzcQB+AIlxAH4AjHEAfgCOc3EAfgB7cQB+ANdzcQB+AIFzcQB+AIR1cQB+AIcAAAADc3EAfgCJcQB+ALhzcQB+AIl0AAJpb3EAfgCOc3EAfgB7cQB+AORxAH4BFXNxAH4Ae3QABkVxdWFsc3EAfgEVc3EAfgDnc3EAfgB7dAAGT3B0aW9uc3EAfgCBc3EAfgCEdXEAfgCHAAAAAnNxAH4AiXQADWVycm9yaGFuZGxpbmdxAH4AjnVxAH4AsAAAAAFzcgAWeHNidGkuYXBpLlBhcmFtZXRlclJlZj/Y4zkALHOwAgABTAACaWRxAH4ADXhxAH4AfXQAFGVycm9yaGFuZGxpbmcuU29tZS5Bc3EAfgB7cQB+ALNzcQB+AIFzcQB+AIR1cQB+AIcAAAADc3EAfgCJcQB+ALhzcQB+AIlxAH4AunEAfgCOc3EAfgB7cQB+AJFxAH4BFXVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAABc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQADWVycm9yaGFuZGxpbmdzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAUvnBmlSdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQANy9yb290L3NjYWxhbGVhcm5pbmcvZnBpbnNjYWxhL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABSKwXKE021mHmNom/txu3Uw3AnB5g==
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAJGuRyAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAQ3NyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cGdjJjd0AAZub3RpZnlzcQB+AAyGPL4TdAAHZmxhdHRlbnNxAH4ADAQYhd50AA5oYXNTdWJzZXF1ZW5jZXNxAH4ADL2D5390AANOaWxzcQB+AAzno4lJdAAQZHJvcFdoaWxlRWxlZ2FudHNxAH4ADOEBm2F0AAR3YWl0c3EAfgAMxKxPX3QACGZpbHRlckZNc3EAfgAMiftpMnQACWZvbGRSaWdodHNxAH4ADKKwo050AA5jb3B5JGRlZmF1bHQkMnNxAH4ADAUsae10AA0kYXNJbnN0YW5jZU9mc3EAfgAMwqVmzHQAA21hcHNxAH4ADNlSCMx0AAlkcm9wV2hpbGVzcQB+AAxAmysmdAAMcHJvZHVjdEFyaXR5c3EAfgAMhScF9XQABmVxdWFsc3NxAH4ADE0ni9p0AAF0c3EAfgAMJFRXnHQADGFzSW5zdGFuY2VPZnNxAH4ADDxb+Ap0AAxzeW5jaHJvbml6ZWRzcQB+AAzTUypMdAANJGlzSW5zdGFuY2VPZnNxAH4ADNBzKZl0AAtkcm9wRWxlZ2FudHNxAH4ADKW+kwV0AARzdW0yc3EAfgAMMekXvHQAB3ppcFdpdGhzcQB+AAztozwsdAAEYWRkMXNxAH4ADBKhJHp0AAhjYW5FcXVhbHNxAH4ADF0UGAh0AAR0YWlsc3EAfgAMFV2NIHQABHN1bTNzcQB+AAyOZdQcdAANcHJvZHVjdFByZWZpeHNxAH4ADNPNFc90AARDb25zc3EAfgAM66jTDHQACW5vdGlmeUFsbHNxAH4ADPV9VYZ0AAtyZWFkUmVzb2x2ZXNxAH4ADIYjhzl0AAhwcm9kdWN0M3NxAH4ADCMqx+p0AARkcm9wc3EAfgAMdeM4GXQADGlzSW5zdGFuY2VPZnNxAH4ADIpnXFl0AAdyZXZlcnNlc3EAfgAMwhZRvXQABmZpbHRlcnNxAH4ADEA5R0d0AAY8aW5pdD5zcQB+AAxnpiPwdAAFYXBwbHlzcQB+AAxSk1g4dAAHZmxhdE1hcHNxAH4ADH1MGKl0AAptZXJnZUxpc3Rzc3EAfgAMVAnm5XQAEmRvdWJsZVRvU3RyaW5nRm9sZHNxAH4ADJdXZcR0AAI9PXNxAH4ADOWOnbp0AAVjbG9uZXNxAH4ADGlKzl90AAlmb2xkTGVmdDJzcQB+AAzT42zzdAAIcHJvZHVjdDJzcQB+AAxqTtTQdAAEY29weXNxAH4ADBCl43l0AAh0b1N0cmluZ3NxAH4ADJFZGCN0AAZsZW5ndGhzcQB+AAzcMQhEdAACIT1zcQB+AAxfaoRgdAABaHNxAH4ADMgDwbJ0AAhnZXRDbGFzc3NxAH4ADAA/8eB0AA5jb3B5JGRlZmF1bHQkMXNxAH4ADBFUDtB0AARMaXN0c3EAfgAMYmVRXXQACGZvbGRMZWZ0c3EAfgAMSDnyv3QAAm5lc3EAfgAMe2wTm3QAA2FkZHNxAH4ADO3V5yZ0AARpbml0c3EAfgAM7PrDbnQACmZvbGRSaWdodDJzcQB+AAyVfAcadAACZXFzcQB+AAxd8VjXdAAPcHJvZHVjdEl0ZXJhdG9yc3EAfgAMzpsfVHQAA3N1bXNxAH4ADOYl2Ep0AAIjI3NxAH4ADHke6Y90AAhmaW5hbGl6ZXNxAH4ADFqSED50AA5wcm9kdWN0RWxlbWVudHNxAH4ADLvBstx0AAhoYXNoQ29kZXNxAH4ADED2Rj90AAdwcm9kdWN0c3EAfgAMJLO4RXQAB3NldEhlYWRzcQB+AAyesINHdAAOZG91YmxlVG9TdHJpbmdzcQB+AAxU8zhhdAAGYXBwZW5kc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAABHNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AnXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwCXQAHHByYWN0aWNlLmRhdGFzdHJ1Y3R1cmVzLkxpc3R1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcmdpVdvjcpBrAgAGWwALYW5ub3RhdGlvbnNxAH4AokwAAmlkcQB+AA1MAApsb3dlckJvdW5kdAAQTHhzYnRpL2FwaS9UeXBlO1sADnR5cGVQYXJhbWV0ZXJzcQB+AJ9MAAp1cHBlckJvdW5kcQB+ALBMAAh2YXJpYW5jZXQAFEx4c2J0aS9hcGkvVmFyaWFuY2U7eHB1cQB+AKgAAAAAdAAecHJhY3RpY2UuZGF0YXN0cnVjdHVyZXMuTGlzdC5Bc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHQAB05vdGhpbmdzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ALdzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AMR1cQB+AK0AAAAAc3EAfgC1dAADQW55cQB+AL1+cgASeHNidGkuYXBpLlZhcmlhbmNlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAJQ292YXJpYW50fnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHEAfgDNdAAFVHJhaXR1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9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
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBpfnDWAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAK3NyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cI+ZZml0AAZub3RpZnlzcQB+AAysKI8ldAAEd2FpdHNxAH4ADEfvx710AA5jb3B5JGRlZmF1bHQkMnNxAH4ADOJnapx0AA0kYXNJbnN0YW5jZU9mc3EAfgAMnh1HwXQABHNpemVzcQB+AAwHyVjldAADbWFwc3EAfgAMcfh443QADHByb2R1Y3RBcml0eXNxAH4ADBZ9mAt0AAZlcXVhbHNzcQB+AAxomXVIdAALc2l6ZVZpYUZvbGRzcQB+AAyL1iHkdAAMYXNJbnN0YW5jZU9mc3EAfgAMQM1JIHQADHN5bmNocm9uaXplZHNxAH4ADBPvpWt0AARsZWZ0c3EAfgAM+rLuKXQADGRlcHRoVmlhRm9sZHNxAH4ADCFh3950AARUcmVlc3EAfgAM6KugFHQADSRpc0luc3RhbmNlT2ZzcQB+AAyvZe0rdAAEZm9sZHNxAH4ADIfjjtF0AAhjYW5FcXVhbHNxAH4ADCKqOl90AARMZWFmc3EAfgAMEXwwmHQADXByb2R1Y3RQcmVmaXhzcQB+AAxQrJhvdAAJbm90aWZ5QWxsc3EAfgAM7sBthXQADGlzSW5zdGFuY2VPZnNxAH4ADElQUvJ0AAdtYXhpbXVtc3EAfgAMmitIonQABjxpbml0PnNxAH4ADEWEW1h0AAI9PXNxAH4ADPpSpZB0AAVjbG9uZXNxAH4ADJXUeo10AAZCcmFuY2hzcQB+AAxE+N1sdAAEY29weXNxAH4ADLmYETx0AAh0b1N0cmluZ3NxAH4ADFECdCJ0AAVkZXB0aHNxAH4ADHKuMHd0AAIhPXNxAH4ADO8RC5d0AAhnZXRDbGFzc3NxAH4ADDdv3P90AA5jb3B5JGRlZmF1bHQkMXNxAH4ADDR4ex90AAJuZXNxAH4ADI4/7Ld0AAptYXBWaWFGb2xkc3EAfgAMSULwHnQACm1heFZpYUZvbGRzcQB+AAxqs80kdAAFdmFsdWVzcQB+AAw8J0TSdAACZXFzcQB+AAzK+vNEdAAPcHJvZHVjdEl0ZXJhdG9yc3EAfgAMzjJXEXQABXJpZ2h0c3EAfgAMm3miyHQAAiMjc3EAfgAMh5a4dnQACGZpbmFsaXplc3EAfgAMiHgZzXQADnByb2R1Y3RFbGVtZW50c3EAfgAMXsgqjXQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAABHNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AbXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwCXQAHHByYWN0aWNlLmRhdGFzdHJ1Y3R1cmVzLlRyZWV1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcmdpVdvjcpBrAgAGWwALYW5ub3RhdGlvbnNxAH4AckwAAmlkcQB+AA1MAApsb3dlckJvdW5kdAAQTHhzYnRpL2FwaS9UeXBlO1sADnR5cGVQYXJhbWV0ZXJzcQB+AG9MAAp1cHBlckJvdW5kcQB+AIBMAAh2YXJpYW5jZXQAFEx4c2J0aS9hcGkvVmFyaWFuY2U7eHB1cQB+AHgAAAAAdAAecHJhY3RpY2UuZGF0YXN0cnVjdHVyZXMuVHJlZS5Bc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHQAB05vdGhpbmdzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AIdzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXB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0ACBwcmFjdGljZS5kYXRhc3RydWN0dXJlcy5CcmFuY2guQXEAfgCJdXEAfgB9AAAAAHEAfgCacQB+ANNxAH4A1XVxAH4AowAAAABzcQB+AKUAcHNxAH4AqnEAfgCtc3EAfgClAHBzcQB+AKpzcQB+ALBzcQB+AKUAcHNxAH4AqnVxAH4AaAAAAABzcQB+AKUAcHNxAH4AqnVxAH4AaAAAAABzcQB+AKUAcHNxAH4AqnVxAH4AugAAAAdzcQB+AIVxAH4A53NxAH4Ai3NxAH4AjnVxAH4AkQAAAAJzcQB+AJNxAH4AlnEAfgCYc3EAfgCFcQB+AOdzcQB+AItzcQB+AI51cQB+AJEAAAADc3EAfgCTcQB+AMJzcQB+AJN0AAJpb3EAfgCYc3EAfgCFcQB+APRxAH4BJ3NxAH4AhXQABkVxdWFsc3EAfgEnc3EAfgD3c3EAfgCFcQB+APtzcQB+AItzcQB+AI51cQB+AJEAAAADc3EAfgCTdAAIcHJhY3RpY2VzcQB+AJN0AA5kYXRhc3RydWN0dXJlc3EAfgCYdXEAfgC6AAAAAXNxAH4BBHQAIHByYWN0aWNlLmRhdGFzdHJ1Y3R1cmVzLkJyYW5jaC5Bc3EAfgCFcQB+AL1zcQB+AItzcQB+AI51cQB+AJEAAAADc3EAfgCTcQB+AMJzcQB+AJNxAH4AxHEAfgCYc3EAfgCFcQB+AJtxAH4BJ3NxAH4AanEAfgB3dXEAfgB4AAAAAHNxAH4AegB0ABxwcmFjdGljZS5kYXRhc3RydWN0dXJlcy5UcmVldXEAfgB9AAAAAH5xAH4AoHQABk1vZHVsZXVxAH4AowAAAABzcQB+AKUAcHNxAH4AqnEAfgCtc3EAfgClAHBzcQB+AKpzcQB+ALBzcQB+AKUAcHNxAH4AqnVxAH4AaAAAAABzcQB+AKUAcHNxAH4AqnVxAH4AaAAAAABzcQB+AKUAcHNxAH4AqnVxAH4AugAAAAJzcQB+AIVxAH4AvXNxAH4Ai3NxAH4AjnVxAH4AkQAAAANzcQB+AJNxAH4AwnNxAH4Ak3EAfgDEcQB+AJhzcQB+AIVxAH4Am3NxAH4Ai3NxAH4AjnVxAH4AkQAAAAJzcQB+AJNxAH4AlnEAfgCYdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAJzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAAXcHJhY3RpY2UuZGF0YXN0cnVjdHVyZXNzcQB+AWt0AAhwcmFjdGljZXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABS+cGaVJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdAA3L3Jvb3Qvc2NhbGFsZWFybmluZy9mcGluc2NhbGEvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFJSH9MXjPD+SSCTbDMU8XGvOQYUJ
+external apis:
+0 items
+source infos:
+5 items
+/root/scalalearning/fpinscala/src/main/scala/FPInScalaPolymorphic.scala -> 
+AAAAAAAAAAA=
+/root/scalalearning/fpinscala/src/main/scala/MyModule.scala -> 
+AAAAAAAAAAA=
+/root/scalalearning/fpinscala/src/main/scala/errorhandling/Option.scala -> 
+AAAAAAAAAAA=
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/List.scala -> 
+AAAAAAAAAAA=
+/root/scalalearning/fpinscala/src/main/scala/practice/datastructures/Tree.scala -> 
+AAAAAAAAAAA=
+compilations:
+1 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABS+cGaVJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQANy9yb290L3NjYWxhbGVhcm5pbmcvZnBpbnNjYWxhL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEv

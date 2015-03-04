@@ -1,15 +1,54 @@
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mInitial source changes: [0m
 [0m[[0mdebug[0m] [0m	removed:Set()[0m
-[0m[[0mdebug[0m] [0m	added: Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set(/root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/PreownedKittenMain.scala, /root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/logic.scala, /root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/models.scala)[0m
 [0m[[0mdebug[0m] [0m	modified: Set()[0m
 [0m[[0mdebug[0m] [0mRemoved products: Set()[0m
 [0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/PreownedKittenMain.scala, /root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/logic.scala, /root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/models.scala)[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m	product: Set()[0m
 [0m[[0mdebug[0m] [0m	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/PreownedKittenMain.scala, /root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/logic.scala, /root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/models.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 3 sources: invalidated sources (3) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 3 Scala sources to /root/scalalearning/sbtinaction/common/target/scala-2.10/classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.4[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.4[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 31b8973c, interfacing (CompilerInterface) with Scala compiler version 2.10.4[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/opt/jdk1.8.0_25/jre/lib/resources.jar:/opt/jdk1.8.0_25/jre/lib/rt.jar:/opt/jdk1.8.0_25/jre/lib/sunrsasign.jar:/opt/jdk1.8.0_25/jre/lib/jsse.jar:/opt/jdk1.8.0_25/jre/lib/jce.jar:/opt/jdk1.8.0_25/jre/lib/charsets.jar:/opt/jdk1.8.0_25/jre/lib/jfr.jar:/opt/jdk1.8.0_25/jre/classes:/root/.sbt/boot/scala-2.10.4/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/root/scalalearning/sbtinaction/common/target/scala-2.10/classes:/root/.ivy2/cache/com.typesafe.scala-logging/scala-logging-slf4j_2.10/jars/scala-logging-slf4j_2.10-2.1.2.jar:/root/.ivy2/cache/com.typesafe.scala-logging/scala-logging-api_2.10/jars/scala-logging-api_2.10-2.1.2.jar:/root/.sbt/boot/scala-2.10.4/lib/scala-reflect.jar:/root/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.7.jar:/root/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.7.jar:/root/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.7.jar:/root/.ivy2/cache/org.scalacheck/scalacheck_2.10/jars/scalacheck_2.10-1.12.2.jar:/root/.ivy2/cache/org.scala-sbt/test-interface/jars/test-interface-1.0.jar[0m
+[0m[[0mdebug[0m] [0mScala compilation took 5.116282384 s[0m
+[0m[[0mdebug[0m] [0mInvalidating /root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/PreownedKittenMain.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/PreownedKittenMain.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/PreownedKittenMain.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/PreownedKittenMain.scala)[0m
+[0m[[0mdebug[0m] [0mThe /root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/PreownedKittenMain.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	notify, wait, $asInstanceOf, equals, asInstanceOf, synchronized, $isInstanceOf, main, notifyAll, isInstanceOf, ==, clone, toString, PreownedKittenMain, !=, getClass, ne, eq, ##, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/logic.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/logic.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/logic.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/logic.scala)[0m
+[0m[[0mdebug[0m] [0mThe /root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/logic.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	notify, wait, $asInstanceOf, equals, asInstanceOf, matchLikeliHood, synchronized, $isInstanceOf, notifyAll, isInstanceOf, ==, clone, Logic, toString, !=, getClass, ne, eq, ##, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/models.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/models.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/models.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/models.scala)[0m
+[0m[[0mdebug[0m] [0mThe /root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/models.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	notify, wait, UserPreferencies, copy$default$2, $asInstanceOf, productArity, equals, asInstanceOf, synchronized, $isInstanceOf, canEqual, productPrefix, notifyAll, attributes, isInstanceOf, <init>, id, ==, clone, copy, toString, !=, getClass, Kitten, copy$default$1, ne, eq, productIterator, ##, finalize, productElement, hashCode.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /root/scalalearning/sbtinaction/common/src/main/scala/org/preownedkittens/logic.scala: Set(UserPreferencies, attributes, <init>, Kitten)[0m
+[0m[[0mdebug[0m] [0mNew invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mAll newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m
