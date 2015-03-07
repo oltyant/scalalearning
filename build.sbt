@@ -14,6 +14,7 @@ def ScalaLearningProject(name: String): Project = {
       libraryDependencies ++= Seq(
         "org.specs2" % "specs2_2.11" % "3.0-M2-scalaz-7.0.6" % "test"
       ),
+      resolvers += Classpaths.sbtPluginReleases,
       ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) }
   )
 }
