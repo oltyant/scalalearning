@@ -4,6 +4,8 @@ version := "1.0"
 
 scalaVersion := "2.11.5"
 
+crossScalaVersions := Seq("2.10.4", "2.11.5") 
+
 def ScalaLearningProject(name: String): Project = {
   Project(name, file(name))
     .settings(

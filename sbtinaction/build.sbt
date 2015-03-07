@@ -50,18 +50,19 @@ def PreownedKittenProject(name: String): Project = {
   .settings(
       version      := "1.0",
       organization := "com.preownedkittens",
+      resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases",
       libraryDependencies ++= Seq(
         "com.typesafe.scala-logging" %% "scala-logging-slf4j" % "2.1.2",
         "ch.qos.logback" % "logback-classic" % "1.0.7",
         "junit" % "junit" % "4.11" % "test",
         "org.scalacheck" %% "scalacheck" % "1.12.2",
-        "org.specs2" %% "specs2" % "1.14" % "test",
+        "org.specs2" %% "specs2" % "2.4.17" % "test",
         "org.pegdown" % "pegdown" % "1.0.2" % "test",
-        "org.scalatest" %% "scalatest" % "2.0" % "test,it",
+        "org.scalatest" %% "scalatest" % "2.2.4" % "test,it",
         "org.seleniumhq.selenium" % "selenium-java" % "2.31.0" % "it",
         "com.novocode" % "junit-interface" % "0.11" % "test"
-      )      
-    )
+      )
+  )
   .configs(IntegrationTest)
 }
 
