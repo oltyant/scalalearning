@@ -39,7 +39,12 @@ lazy val reactivescala_coursera = (
 lazy val impatient = (
   ScalaLearningProject("impatient")
     .dependsOn(fpinscala)
-    .settings()
+    .settings(
+      version := "0.1",
+      libraryDependencies ++= Seq("org.scalatest" %% "scalatest" % "2.2.4" % "test",
+        "org.scalacheck" %% "scalacheck" % "1.12.2"
+      )
+    )
 )
 
 lazy val mallonscala = (
