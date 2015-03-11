@@ -11,8 +11,11 @@ def ScalaLearningProject(name: String): Project = {
     .settings(
       version      := "1.0",
       organization := "com.scalalearning",
+      resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases",
       libraryDependencies ++= Seq(
-        "org.specs2" % "specs2_2.11" % "3.0-M2-scalaz-7.0.6" % "test"
+        "org.specs2" %% "specs2" % "2.4.17" % "test",
+        "org.scalatest" %% "scalatest" % "2.2.4" % "test",
+        "org.scalacheck" %% "scalacheck" % "1.12.2"
       ),
       resolvers += Classpaths.sbtPluginReleases,
       ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) }
@@ -40,10 +43,7 @@ lazy val impatient = (
   ScalaLearningProject("impatient")
     .dependsOn(fpinscala)
     .settings(
-      version := "0.1",
-      libraryDependencies ++= Seq("org.scalatest" %% "scalatest" % "2.2.4" % "test",
-        "org.scalacheck" %% "scalacheck" % "1.12.2"
-      )
+      version := "0.1"
     )
 )
 

@@ -1,5 +1,7 @@
 /**
- * Created by root on 1/18/15.
+ * Created by oltyan on 1/18/15.
+ *
+ * The below code is based on the Functional Programming in Scala book's 2nd chapter
  */
 object MyModule {
   def abs(n: Int): Int = if (n < 0) -n else n
