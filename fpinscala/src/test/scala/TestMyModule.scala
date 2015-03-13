@@ -4,7 +4,7 @@ import scala.util.Random
 import MyModule._
 
 /**
- * Created by oltyan on 3/11/15.
+ * Created by oltyant on 3/11/15.
  *
  * This test calss intend to cover the MyModule type
  */

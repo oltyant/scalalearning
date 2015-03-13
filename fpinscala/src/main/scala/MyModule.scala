@@ -4,8 +4,18 @@
  * The below code is based on the Functional Programming in Scala book's 2nd chapter
  */
 object MyModule {
+  /**
+   * Compute the absolute value of an integer
+   * @param n - the input number of the computation
+   * @return - the computed absolute value of the input number
+   */
   def abs(n: Int): Int = if (n < 0) -n else n
 
+  /**
+   * Calculate the Nth factorial
+   * @param n - the base of the calculation that is the Nth number
+   * @return - the result of the calculation that is the Nth factorial
+   */
   def factorial(n: Int): BigInt = {
     @annotation.tailrec
     def go(n: Int, acc: BigInt): BigInt = {
