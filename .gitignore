@@ -15,4 +15,7 @@ project/plugins/project/
 # intelliJ IDEA specific
 .idea
 
+#repo token
+coveralls.sbt
+
 !.gitignore

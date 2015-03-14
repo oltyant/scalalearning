@@ -77,7 +77,7 @@ class TestFPInScalaPolymorphic extends FlatSpec with GivenWhenThen {
 
   it must "give back true when we have an array of Double where the elements are in ASC" in {
     Given("an array of Double ordered by ASC")
-    val arr = Array(-1., 0., 0., 0.3, 1.5, 5.6)
+    val arr = Array(-1.0, 0.0, 0.0, 0.3, 1.5, 5.6)
     And("a function that checks whether all the elements are in order")
     val f = new Function2[Double, Double, Boolean] {
       def apply(first: Double, second: Double): Boolean = {
