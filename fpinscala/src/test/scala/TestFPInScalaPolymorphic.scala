@@ -89,4 +89,79 @@ class TestFPInScalaPolymorphic extends FlatSpec with GivenWhenThen {
     Then("we have to get false")
     assert(result)
   }
+
+  "the 'partial1' function" must "print out an Int and a Double as a string" in {
+    Given("the int 1025")
+    val int = 1025
+    And("the double 4.0")
+    val d = 4.0
+    And("a function that has int and double parameter and give back a string")
+    val f = (a: Int, b: Double) => s"a: $a, b: $b"
+    When("the 'partial1' executed with the given int and function")
+    val part1 = partial1(int, f)
+    And("its result called with the given double")
+    val result = part1(d)
+    Then("the result must be the string 'a: 1025, b: 4.0'")
+    assert(result == "a: 1025, b: 4.0")
+  }
+
+  "the 'curry' function" should "chain functions in order to give back a comma separated string concatenation" in {
+    Given("the int 1")
+    val a = 1
+    And("double 2.0")
+    val d = 2.0
+    And("function that computes a string with a comma separated int and double")
+    val f: (Int, Double) => String = (x,y) => s"$x,$y"
+    When("the 'curry' executed with the given function")
+    val c1 = curry(f)
+    And("if we pass into the result the given int and double")
+    val result = c1(a)(d)
+    Then("the result should be the string '1,2.0'")
+    assert(result == "1,2.0")
+  }
+
+  "the 'curryShorterForm' function" should "chain functions in order to give back a comma separated string concatenation" in {
+    Given("the int 1")
+    val a = 1
+    And("double 2.0")
+    val d = 2.0
+    And("function that computes a comma separated string of an int and a double")
+    val f: (Int, Double) => String = (x,y) => s"$x,$y"
+    When("the 'curryShorterForm' executed with the given function")
+    val c1 = curryShorterForm(f)
+    And("if we pass into the result the given int and double")
+    val result = c1(a)(d)
+    Then("the result should be the string '1,2.0'")
+    assert(result == "1,2.0")
+  }
+
+  "the 'uncurry' function" should "compose chained function in order to give back a comma separated string concatenation" in {
+    Given("the int 1")
+    val a = 1
+    And("double 2.0")
+    val d = 2.0
+    And("a chained function that computes a comma separated string of an int and a double")
+    val f: (Int) => (Double) => String = (x) => (y) => s"$x,$y"
+    When("the 'curryShorterForm' executed with the given function")
+    val c1 = uncurry(f)
+    And("if we pass into the result the given int and double")
+    val result = c1(a, d)
+    Then("the result should be the string '1,2.0'")
+    assert(result == "1,2.0")
+  }
+
+  "the 'compose' function" should "compose two given functions that convert from int to double and double to string respectively" in {
+    Given("the int 1")
+    val a = 1
+    And("a function that maps an int to a double")
+    val g: (Int) => (Double) = _.toDouble
+    And("a function that maps a double to a string")
+    val f: (Double) => (String) = _.toString
+    When("the 'compose' executed with the given functions")
+    val comp = compose(f, g)
+    And("the resulted function applied on the given int")
+    val result = comp(a)
+    Then("the result should be the string '1.0'")
+    assert(result == "1.0")
+  }
 }

@@ -42,6 +42,16 @@ object FPInScalaParametricPolymorphism {
 
   /**
    * Check whether the given array is sorted or not
+   * example:
+   * <code>
+   * val lessThan = new Function2[Int, Int, Boolean] {
+   *  def apply(x: Int, y: Int): Boolean = x <= y
+   * }
+   * </code>
+   * <code>isSorted(Array(-34,0,1,89), lessThan)</code>
+   * OR: <code>isSorted(Array(-100,2,0,2,78,91), (x: Int, y: Int) => x <= y)</code>
+   * OR: <code>isSorted[Int](Array(1, -1), _ <= _)</code>
+   *
    * @param arr - the given array of tparam elements
    * @param ordered - a function that based on two neighbour elements give back true or false
    * @tparam A - the arr and ordered parameter type
@@ -56,35 +66,100 @@ object FPInScalaParametricPolymorphism {
     }
     loop(0)
   }
-  //example: val lessThan = new Function2[Int, Int, Boolean] {
-  //  def apply(x: Int, y: Int): Boolean = x <= y
-  //}
-  //
-  //isSorted(Array(-34,0,1,89), lessThan)
-  //OR: isSorted(Array(-100,2,0,2,78,91), (x: Int, y: Int) => x <= y)
-  //OR: isSorted[Int](Array(1, -1), _ <= _)
 
+  /**
+   * The general definition of a partial function that has three parameter type.
+   * It gives back a function that has one B type parameter and apply the f function on it.
+   * The term partial here means that we have just one value parameter out of two
+   * in this function so it just define the partially what we are able to do
+   * example:
+   * <code>val p = partial1(1, (a: Int, b: Double) => s"$a $b")<br/>
+   * p(2.0)<br/>
+   * res: String = "1 2.0"</code>
+   *
+   * @param a - the first value parameter that the given f function will use
+   * @param f - the f function that apply on an element of type A and type B and give back type C
+   * @tparam A - the first parameter type of the given f function
+   * @tparam B - the second parameter type of the given f function
+   * @tparam C - the result of the given f function
+   * @return - a function that maps from B to C (must have parameter value B)
+   */
   def partial1[A,B,C](a: A, f: (A,B) => C): B => C = (b: B) => f(a,b)
-  //example: val p = partial1(1, (a: Int, b: Double) => s"$a $b")
-  //p(2.0)
-  //res: String = "1 2.0"
 
+  /**
+   * Implementation of the general currying that has some similarity with the above [[FPInScalaParametricPolymorphism.partial1]]
+   * (check <a href="http://en.wikipedia.org/wiki/Currying" target="_blank">this</a> site for the basic concept)
+   * example:
+   * <code>
+   *   val c = curry((a: Int, b: Double) => s"$a $b")
+   *   val c1 = c(1)
+   *   c1(2.0)
+   *   res: String = "1 2.0"
+   * </code>
+   * <p>
+   *   <b>Note:</b> that here the associativity matters so A => (B => C) is equivalent
+   *   with A => B => C and with (A => B) => C
+   * </p>
+   *
+   * @param f - a function that maps an A and B parameter value to a value of C type
+   * @tparam A - the first parameter type of the f function and the result
+   * @tparam B - the second parameter type of the f function and the result
+   * @tparam C - the final result of the currying
+   * @return - a function that expect a function with an input value of type A and gives back
+   *         another function that expect a B typed value and eventually give back a C typed value
+   */
   def curry[A,B,C](f: (A, B) => C): A => (B => C) = (a: A) => ((b: B) => f(a, b))
+
+  /**
+   * The same as [[FPInScalaParametricPolymorphism.curry]] but with shorter implementation
+   *
+   * @param f - a function that maps an A and B parameter value to a value of C type
+   * @tparam A - the first parameter type of the f function and the result
+   * @tparam B - the second parameter type of the f function and the result
+   * @tparam C - the final result of the currying
+   * @return - a function that expect a function with an input value of type A and gives back
+   *         another function that expect a B typed value and eventually give back a C typed value
+   */
   def curryShorterForm[A,B,C](f: (A, B) => C): A => (B => C) = a => f(a, _)
-  //example: val c = curry(a: Int, (b: Double) => s"$a $b")
-  //val c1 = c(1)
-  //c1(2.0)
-  //res: String = "1 2.0"
 
+  /**
+   * The opposite of currying so the result and the parameters are the opposite.
+   * It just apply the given function on all of the parameters passed into it
+   * example:
+   * <code>
+   *   val uc = uncurry((a: Int) => ((b: Double) => s"$a $b"))
+   *   uc(1, 2.0)
+   *   res: String = "1 2.0"
+   * </code>
+   *
+   * @param f - a function that maps A to B that maps to C
+   * @tparam A - the first parameter of the given f function
+   * @tparam B - the second parameter type of the f function
+   * @tparam C - the result of the given f function
+   * @return - a function that turn an A and a B to C
+   */
   def uncurry[A,B,C](f: A => B => C): (A, B) => C = (a: A, b: B) => (f(a)(b))
-  //example: val uc = uncurry((a: Int) => ((b: Double) => s"$a $b"))
-  //uc(1, 2.0)
-  //res: String = "1 2.0"
 
+  /**
+   * The general definition of two functions composition.
+   * In mathematics the f function composed g function (f o g)
+   * means that we apply on the given parameter the g function and then we apply the given result the
+   * f function.
+   * example:
+   * <code>
+   * val c = compose[Int, Double, String](b => s"$b", a => a * 1.0)
+   * c(30)
+   * res: String = "30.0"
+   * </code>
+   *
+   * @param f - maps the given type of B element to C
+   * @param g - maps the given type of A element to B
+   * @tparam A - the initial type of the computation
+   * @tparam B - the subsequent type of the computation
+   * @tparam C - the result type of the computation
+   * @return - f(g(an element of type A)) gives back an element of type C
+   */
   def compose[A,B,C](f: B => C, g: A => B): A => C = a => f(g(a))
-  //example: val c = compose[Int, Double, String](b => s"$b", a => a * 1.0)
-  //c(30)
-  //res: String = "30.0"
 
   /*
   Note that A,B,C could be any type including identical types eg: [Int, Int, Int] or [String, String, Int]
