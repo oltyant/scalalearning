@@ -1,5 +1,5 @@
-import org.scalatest.{GivenWhenThen, FlatSpec}
 import FPInScalaParametricPolymorphism._
+import org.scalatest.{FlatSpec, GivenWhenThen}
 
 /**
  * Created by oltyant on 3/13/15.

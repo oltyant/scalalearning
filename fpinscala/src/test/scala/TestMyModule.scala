@@ -6,11 +6,11 @@ import MyModule._
 /**
  * Created by oltyant on 3/11/15.
  *
- * This test calss intend to cover the MyModule type
+ * This test class intend to cover the MyModule type
  */
 object TestMyModule extends Specification {
   "The abs method" should {
-    "result the input number wihout sign when the input number is negative" in {
+    "result the input number without sign when the input number is negative" in {
       val negativeNumber = -2
       val result = abs(negativeNumber)
       result mustEqual 2

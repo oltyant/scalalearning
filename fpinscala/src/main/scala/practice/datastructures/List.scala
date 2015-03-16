@@ -1,35 +1,97 @@
 package practice.datastructures
 
+/*
+ * Based on the book's 3rd chapter
+ */
+
+/**
+ * The trait of the functional immutable List data structure
+ * @tparam A - A List can contain any type and its descendants
+ */
 sealed trait List[+A]
+
+/**
+ * The Empty List
+ */
 case object Nil extends List[Nothing]
+
+/**
+ * The non-empty List that contain at least one element, namely the head
+ * @param h - the head of the list
+ * @param t - the tail of the List which is another List
+ * @tparam A - A List can contain any type and its descendants
+ */
 case class Cons[+A](h: A, t: List[A]) extends List[A]
 
+/**
+ * The companion object of the immutable List class
+ */
 object List {
+  /**
+   * Sum all of the elements in the given list
+   * @param l - the given list that will be reduced to an Int
+   * @return - the sum of the given list's elements
+   */
   def sum(l: List[Int]): Int = l match {
     case Nil => 0
     case Cons(h, t) => h + sum(t)
   }
 
+  /**
+   * Product of all the elements in the given list
+   * @param l - the given list that will be reduced to a Double
+   * @return - the product of the given list's elements
+   */
   def product(l: List[Double]): Double = l match {
     case Nil => 1.0
     case Cons(0.0, _) => 0.0
     case Cons(h, t) => h * product(t)
   }
 
+  /**
+   * Syntactic sugar to construct a List of A from a varargs of A
+   *
+   * @param as - the given varags of A
+   * @tparam A - the parametric type of the given varargs and the result
+   * @return - a list of A
+   */
   def apply[A](as: A*): List[A] =
     if (as.isEmpty) Nil
     else Cons(as.head, apply(as.tail: _*))
 
+  /**
+   * Give back the tail of the given list (drop the head of the list)
+   *
+   * @param l - the given list of A
+   * @tparam A - the parametric type of the input and output
+   * @return - the given list's tail
+   */
   def tail[A](l: List[A]): List[A] = l match {
     case Nil => Nil
     case Cons(h, t) => t
   }
 
+  /**
+   * Change the head of the given list to the given element
+   *
+   * @param l - the given list of A
+   * @param e - the element that will go to the given's list head
+   * @tparam A - parametric type of the in/output list
+   * @return - list with the new head
+   */
   def setHead[A](l: List[A], e: A): List[A] = l match {
     case Nil => throw new NoSuchElementException
     case Cons(_, t) => Cons(e, t)
   }
 
+  /**
+   * Drop n element from the beginning of a given list
+   *
+   * @param l - the given list of elements A
+   * @param n - the first n number
+   * @tparam A - type parameter of the lists
+   * @return - a list that does not contain the first n element of the given list
+   */
   def drop[A](l: List[A], n: Int): List[A] = {
     @annotation.tailrec
     def loop(sl: List[A], i: Int): List[A] = sl match {
