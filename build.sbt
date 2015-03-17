@@ -4,21 +4,25 @@ version := "1.0"
 
 scalaVersion := "2.11.5"
 
-crossScalaVersions := Seq("2.10.4", "2.11.5") 
+crossScalaVersions := Seq("2.10.4", "2.11.5")
 
 def ScalaLearningProject(name: String): Project = {
   Project(name, file(name))
     .settings(
       version      := "1.0",
       organization := "com.scalalearning",
-      resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases",
+      resolvers ++= Seq(
+        "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases",
+        "sonatype-releases" at "https://oss.sonatype.org/content/repositories/releases/"
+      ),
       libraryDependencies ++= Seq(
         "org.specs2" %% "specs2" % "2.4.17" % "test",
         "org.scalatest" %% "scalatest" % "2.2.4" % "test",
-        "org.scalacheck" %% "scalacheck" % "1.12.2"
+        "org.scalacheck" %% "scalacheck" % "latest.release" % Test
       ),
       resolvers += Classpaths.sbtPluginReleases,
-      ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) }
+      ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) },
+      (scalastyleFailOnError in Global) := true
   )
 }
 
@@ -48,7 +52,7 @@ lazy val impatient = (
 )
 
 lazy val mallonscala = (
-  ScalaLearningProject("mallonscala")
+  ScalaLearningProject("otherscala")
     .dependsOn(fpinscala)
     .settings()
 )

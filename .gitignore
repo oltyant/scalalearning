@@ -1,5 +1,6 @@
 *.class
 *.log
+#scalastyle-config.xml
 
 # sbt specific
 .cache
