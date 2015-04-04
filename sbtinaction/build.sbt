@@ -2,6 +2,20 @@ name := "sbtinaction"
 
 version := "1.0"
 
+//TODO make it inputKey with three possible args css:path xslt:path js:path (the order doesn't matter)
+//TODO wrap around column
+lazy val scalastyleReport = taskKey[File]("Generate an html report from the xml report of the scalastyle plugin")
+
+scalastyleReport := {
+  val xmlReport =  org.scalastyle.sbt.ScalastylePlugin.scalastyle.in(Compile).toTask("").value
+  val htmlFile = ScalastyleReport.report(target.value / "html-test-report",
+    "scalastyle-report.html",
+    baseDirectory.value / "project/scalastyle-report.html",
+    target.value / "scalastyle-result.xml")
+  println("created report " + htmlFile.getAbsolutePath)
+  htmlFile
+}
+
 lazy val checkUname = taskKey[String]("Check the uname of the system")
 
 val dependentJarDirectory = settingKey[File]("location of the unpacked dependent jars")

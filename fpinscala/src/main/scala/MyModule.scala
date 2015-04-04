@@ -44,3 +44,33 @@ object MyModule {
 
   def main(args: String*) = println(formatFunction(-42, "factorial")(factorial))
 }
+
+// The framework
+trait Frame[R] {
+  def renderer:ReadRender[R]
+  trait ReadRender[R] {
+  def say[T](src:R) : T
+  }
+}
+
+// A specific implementation
+trait StringFrame extends Frame[String] {
+  def renderer = new StringReadRender()
+  class StringReadRender() extends ReadRender[String] {
+    def say[T](src:String) : T = {
+      println("Say: "+src)
+      null.asInstanceOf[T]  // placeholder--actual work here in real code
+    }
+  }
+}
+
+// Wiring it up
+trait SJ[R] {
+  this : Frame[R] =>
+  def foo[T](me:R) = {
+    println("In foo")
+    renderer.say[T](me)
+  }
+}
+
+case class Greg() extends SJ[String] with StringFrame

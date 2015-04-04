@@ -1,0 +1,26 @@
+<html>
+  <body>
+    <h2>Scalastyle Results</h2>
+    <table>
+      <tr>
+	<th>Name</th>
+	<th>Level</th>
+	<th>Message</th>
+	<th>Line</th>
+      </tr>
+      #foreach (${error} in ${results})
+      <tr>
+	<td>${error.name()}</td>
+	<td>${error.level()}</td>
+	<td>${error.message()}</td>
+	<td>${error.line()}</td>
+      </tr>
+        #foreach (${line} in ${error.codeLines()})
+          <tr class="${line.className()}">
+            <td colspan="4">${line.text()}</td>
+          </tr>
+        #end
+      #end
+    </table>
+  </body>
+</html> 
