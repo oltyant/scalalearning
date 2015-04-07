@@ -84,6 +84,50 @@ object TestLists extends Specification {
       result mustEqual List(1231,2,22,1,-1)
     }
   }
+  "The 'dropWhile' method" should {
+    "give back the original list when it is empty or Nil" in {
+      val l1 = List()
+      val criterion: Int => Boolean = _ % 2 == 0
+      List.dropWhile(l1, criterion) mustEqual l1
+      val l2 = Nil
+      List.dropWhile(l2, criterion) mustEqual l2
+    }
+    "give back the original list when none of the elements fullfill the criterion" in {
+      val l = List(1,2,3,4,6,7,4321)
+      val criterion: Int => Boolean = _ < 0
+      List.dropWhile(l, criterion) mustEqual l
+    }
+    "give back the list that is constructed from the last 3 element that is not fulfill the criterion" in {
+      val l = List(1,2,-34,0,-56)
+      val criterion = (a: Int) => a > 0
+      List.dropWhile(l, criterion) mustEqual List(-34,0,-56)
+    }
+  }
+  "The 'add' method" should {
+    "give back Nil when the given lists are empty or Nil" in {
+      val l1 = Nil
+      val l2 = List()
+      List.add(l1, l2) mustEqual Nil
+      List.add(l2, l1) mustEqual Nil
+      List.add(l1, l1) mustEqual Nil
+      List.add(l2, l2) mustEqual Nil
+    }
+    "give back the second list if the first list is Nil (or empty)" in {
+      val l1 = Nil
+      val l2 = List(1,2,3,4)
+      List.add(l1, l2) mustEqual l2
+    }
+    "give back the first list if the second list is Nil (or empty)" in {
+      val l1 = List(1,2,3,4)
+      val l2 = Nil
+      List.add(l1, l2) mustEqual l1
+    }
+    "give back the concatenation of the given lists if none of the inputs empty or Nil" in {
+      val l1 = List(1,2,3)
+      val l2 = List(4,5,6)
+      List.add(l1, l2) mustEqual List(1,2,3,4,5,6)
+    }
+  }
 }
 
 object CheckLists extends Properties("List") {
@@ -94,8 +138,8 @@ object CheckLists extends Properties("List") {
   //we need to generate seq as the scala's list is hidden
   //the arbirtray's and Gen's builders are implicit's
   //and the implementation of a reasonable List's implicit is too complicated for testing reason
-  val genIntSeqs: Gen[Seq[Int]] = arbitrary[Seq[Int]]
-  val genDoubleSeq: Gen[Seq[Double]] = filterDoubleSeq(arbitrary[Seq[Double]])
+  lazy val genIntSeqs: Gen[Seq[Int]] = arbitrary[Seq[Int]]
+  lazy val genDoubleSeq: Gen[Seq[Double]] = filterDoubleSeq(arbitrary[Seq[Double]])
 
   property("sum of an int list") = forAll(genIntSeqs) {
     (seq: Seq[Int]) => {
@@ -138,6 +182,22 @@ object CheckLists extends Properties("List") {
     (seq: Seq[Int], e: Int) => {
       val list: List[Int] = List(seq: _*)
       List.drop(list, e) == List(seq.drop(e): _*)
+    }
+  }
+
+  property("drop the list's first n element while these fulfill the criterion but the n + 1th is not") = forAll(genIntSeqs) {
+    (seq: Seq[Int]) => {
+      val list = List(seq: _*)
+      val greaterThanHundred = (a: Int) => a > 100
+      List.dropWhile(list, greaterThanHundred) == List(seq.dropWhile(greaterThanHundred): _*)
+    }
+  }
+
+  property("concatenate two lists") = forAll(genIntSeqs, genIntSeqs) {
+    (seq1: Seq[Int], seq2: Seq[Int]) => {
+      val list1 = List(seq1: _*)
+      val list2 = List(seq2: _*)
+      List.add(list1, list2) == List(seq1 ++ seq2: _*)
     }
   }
 }

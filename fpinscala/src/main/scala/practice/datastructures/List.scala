@@ -101,12 +101,34 @@ object List {
     loop(l, n)
   }
 
+  /**
+   * Drop n element from the beginning of a given list
+   *
+   * @param l - the given list of elements A
+   * @param n - the first n number
+   * @tparam A - type parameter of the lists
+   * @return - a list that does not contain the first n element of the given list
+   */
   @annotation.tailrec
   def dropElegant[A](l: List[A], n: Int): List[A] = l match {
     case Cons(h, t) if n > 0 => dropElegant(t, n - 1)
     case _ => l
   }
 
+  /**
+   * Drop the elements from the beginning of a given list while they fulfill the given criterion
+   *
+   * <pre>{@code
+   * List.dropWhile(List(1,2,3,-2,4,0), _ < 3) == List(3,-2,4,0)
+   * }
+   * </pre>
+   *
+   * @param l - the given list of elements A
+   * @param f - the criterion function
+   * @tparam A - type parameter of the lists and the given criterion
+   * @return - a list that contains the subsequence of the given list.<br/>
+   * The first element of this result list is the first element of the given list which is not fulfill the given criterion  
+   */
   def dropWhile[A](l: List[A], f: A => Boolean): List[A] = {
     @annotation.tailrec
     def loop(sl: List[A]): List[A] = sl match {
@@ -116,12 +138,35 @@ object List {
     loop(l)
   }
 
+  /**
+   * Drop the elements from the beginning of a given list while they fulfill the given criterion
+   *
+   * <pre>{@code
+   * List.dropWhile(List(1,2,3,-2,4,0), _ < 3) == List(3,-2,4,0)
+   * }
+   * </pre>
+   *
+   * @param l - the given list of elements A
+   * @param f - the criterion function
+   * @tparam A - type parameter of the lists and the given criterion
+   * @return - a list that contains the subsequence of the given list.<br/>
+   * The first element of this result list is the first element of the given list which is not fulfill the given criterion  
+   */
   @annotation.tailrec
   def dropWhileElegant[A](l: List[A])(f: A => Boolean): List[A] = l match {
     case Cons(h, t) if f(h) => dropWhileElegant(t)(f)
     case _ => l
   }
 
+  /**
+   * Concatenate the two given lists withsame parameter type in the order they stands in the parameter list
+   * 
+   * @param l1 - the first given list of A
+   * @param l2 - the second given list of A
+   * @tparam A - the elements type that the given lists contain
+   * @return - a list that contains the given list's elements in the same order they appeared in the lists respectively
+   * and in the order they passed into this function
+   */
   def add[A](l1: List[A], l2: List[A]): List[A] = l1 match {
     case Nil => l2
     case Cons(h, t) => Cons(h, add(t, l2))
