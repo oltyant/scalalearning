@@ -128,6 +128,20 @@ object TestLists extends Specification {
       List.add(l1, l2) mustEqual List(1,2,3,4,5,6)
     }
   }
+  "The 'init' method" should {
+    "give back Nil when the List is Nil" in {
+      val l = Nil
+      List.init(l) mustEqual Nil
+    }
+    "give back Nil when the input List only contains one element" in {
+      val l = List(new Object())
+      List.init(l) mustEqual Nil
+    }
+    "- aside from the last element - it gives back the original list" in {
+      val l = List(0,1,2,3,4,5,6)
+      List.init(l) mustEqual List(0,1,2,3,4,5)
+    }
+  }
 }
 
 object CheckLists extends Properties("List") {
@@ -198,6 +212,12 @@ object CheckLists extends Properties("List") {
       val list1 = List(seq1: _*)
       val list2 = List(seq2: _*)
       List.add(list1, list2) == List(seq1 ++ seq2: _*)
+    }
+  }
+
+  property("remove the last element from a List") = forAll(genIntSeqs) {
+    (seq: Seq[Int]) => {
+      List.init(List(seq: _*)) == List(seq.dropRight(1): _*)
     }
   }
 }

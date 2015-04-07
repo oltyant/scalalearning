@@ -172,14 +172,17 @@ object List {
     case Cons(h, t) => Cons(h, add(t, l2))
   }
 
-  //It is not tailrec :(
-  def init[A](l: List[A]): List[A] = {
-    def loop(sl: List[A]): List[A] = sl match {
-      case Nil => Nil
-      case Cons(h, Nil) => Nil
-      case Cons(h, t) => Cons(h, loop(t))
-    }
-    loop(l)
+  /**
+   * Remove the last element from the given list
+   * 
+   * @param l - the given list of A
+   * @tparam A - the elements type that the given list contains
+   * @return - a list that contains the given list's elements except the last one
+   */
+  def init[A](l: List[A]): List[A] = l match {
+    case Nil => Nil
+    case Cons(h, Nil) => Nil
+    case Cons(h, t) => Cons(h, init(t))
   }
 
   //sum and product do the same if we remove the products middle case so we can generalize that
