@@ -13,6 +13,9 @@ import org.specs2.mutable.Specification
  * Created by oltyant on 3/15/15.
  */
 object TestLists extends Specification {
+  private lazy val millionLengthIntSeq = (1 to 1000000).toSeq
+  private lazy val millionLengthIntList = List(millionLengthIntSeq: _*)
+  private lazy val millionLengthDoubleList = List(millionLengthIntSeq.map(_.toDouble): _*)
   "The 'sum' method" should {
     "give back zero when the list is empty" in {
       val l = List()
@@ -142,10 +145,151 @@ object TestLists extends Specification {
       List.init(l) mustEqual List(0,1,2,3,4,5)
     }
   }
+  "The 'foldRight' method" should {
+    "give back 0 when the zero element is 0 and the given list is empty" in {
+      List.foldRight(List[Int](), 0)(_ + _) mustEqual 0
+    }
+    "give back 0 when the List is not empty but the zero element is 0 and the function is the product" in {
+      List.foldRight(List(1,-6,7,8,11,34), 0)(_ * _) mustEqual 0
+    }
+    "give back 5 factorial whenthe List is a range from 1 to 5, the zero element is 1 and the function is the product" in {
+      List.foldRight(List(1,2,3,4,5), 1)(_ * _) mustEqual 120
+    }
+    "throws a StackOverflowError when we try to make the sum of million element" in {
+      List.foldRight(millionLengthIntList, 0)(_ + _) must throwA[StackOverflowError]
+    }
+  }
+  "The 'sum2' method" should {
+    "give back zero when the list is empty" in {
+      val l = List()
+      val result = List.sum2(l)
+      result mustEqual 0
+    }
+    "give back 10 when the list contain -20, 10, 30" in {
+      val l = List(-20, 10, 20)
+      val result = List.sum2(l)
+      result mustEqual 10
+    }
+    "throw StackOverflowError when the given list contains 1 million elements" in {
+      List.sum2(millionLengthIntList) must throwA[StackOverflowError]
+    }
+  }
+  "The 'product2' method" should {
+    "give back one when the list is empty" in {
+      val l = List()
+      val result = List.product2(l)
+      result mustEqual 1.0
+    }
+    "give back 10 when the list contain -2.0, 5.0, -1.0" in {
+      val l = List(-2.0, 5.0, -1.0)
+      val result = List.product2(l)
+      result mustEqual 10.0
+    }
+    "throw StackOverflowError when the given list contains 1 million elements" in {
+      List.product2(millionLengthDoubleList) must throwA[StackOverflowError]
+    }
+  }
+  "The 'length' method" should {
+    "give back zero when the list is empty" in {
+      val l = List()
+      val result = List.length(l)
+      result mustEqual 0
+    }
+    "give back 3 when the list contain 3 elements" in {
+      val l = List(-2.0, 5.0, -1.0)
+      val result = List.length(l)
+      result mustEqual 3
+    }
+    "throw StackOverflowError when the given list contains 1 million elements" in {
+      List.length(millionLengthIntList) must throwA[StackOverflowError]
+    }
+  }
+  "The 'foldLeft' method" should {
+    "give back 0 when the zero element is 0 and the given list is empty" in {
+      List.foldLeft(List[Int](), 0)(_ + _) mustEqual 0
+    }
+    "give back 0 when the List is not empty but the zero element is 0 and the function is the product" in {
+      List.foldLeft(List(1,-6,7,8,11,34), 0)(_ * _) mustEqual 0
+    }
+    "give back 5 factorial whenthe List is a range from 1 to 5, the zero element is 1 and the function is the product" in {
+      List.foldLeft(List(1,2,3,4,5), 1)(_ * _) mustEqual 120
+    }
+    "does not throw a StackOverflowError when we try to make the sum of million element" in {
+      List.foldLeft2(millionLengthIntList, 0)(_ + _) must not(throwA[StackOverflowError])
+    }
+  }
+  "The 'sum3' method" should {
+    "give back zero when the list is empty" in {
+      val l = List()
+      val result = List.sum3(l)
+      result mustEqual 0
+    }
+    "give back 10 when the list contain -20, 10, 30" in {
+      val l = List(-20, 10, 20)
+      val result = List.sum3(l)
+      result mustEqual 10
+    }
+    "does not throw StackOverflowError when the given list contains 1 million elements" in {
+      List.sum3(millionLengthIntList) must not(throwA[StackOverflowError])
+    }
+  }
+  "The 'product3' method" should {
+    "give back one when the list is empty" in {
+      val l = List()
+      val result = List.product3(l)
+      result mustEqual 1.0
+    }
+    "give back 10 when the list contain -2.0, 5.0, -1.0" in {
+      val l = List(-2, 5, -1)
+      val result = List.product3(l)
+      result mustEqual 10.0
+    }
+    "does not throw StackOverflowError when the given list contains 1 million elements" in {
+      List.product3(millionLengthIntList) must not(throwA[StackOverflowError])
+    }
+  }
+  "The 'reverse' method" should {
+    "give back the empty list if the input list is empty" in {
+      List.reverse(List()) mustEqual List()
+    }
+    "give back the reverse of the input list otherwise" in {
+      List.reverse(List(1,2,3)) mustEqual List(3,2,1)
+    }
+  }
+  "The 'foldRight2' method" should {
+    "give back 0 when the zero element is 0 and the given list is empty" in {
+      List.foldRight2(List[Int](), 0)(_ + _) mustEqual 0
+    }
+    "give back 0 when the List is not empty but the zero element is 0 and the function is the product" in {
+      List.foldRight2(List(1,-6,7,8,11,34), 0)(_ * _) mustEqual 0
+    }
+    "give back 5 factorial whenthe List is a range from 1 to 5, the zero element is 1 and the function is the product" in {
+      List.foldRight2(List(1,2,3,4,5), 1)(_ * _) mustEqual 120
+    }
+    "does not throw a StackOverflowError when we try to make the sum of million element" in {
+      List.foldRight2(millionLengthIntList, 0)(_ + _) must not(throwA[StackOverflowError])
+    }
+  }
+  "The 'append' method" should {
+    "give back the list only contains the appended element when the given list is empty" in {
+      List.append(List[Int](), 1) mustEqual List(1)
+    }
+    "give back the input list with the given element appended to the end otherwise" in {
+      List.append(List(1,2,3), -1) mustEqual List(1,2,3,-1)
+    }
+  }
+  "The 'flatten' method" should {
+    "give back Nil when the given list only contain empty lists" in {
+      List.flatten(List(List(), Nil)) mustEqual Nil
+    }
+    "give back the flatten list otherwise" in {
+      List.flatten(List(List(1,2), Nil, List(3,4), Nil)) mustEqual List(1,2,3,4)
+    }
+  }
 }
 
 object CheckLists extends Properties("List") {
-  //We need to filter out big and small doubles as the product result seems too variadic for the list of really big or really small numbers
+  //We need to filter out big and small doubles as their product result seems too variadic for the list of really big or really small numbers
   //that is because of the double's byte representation
   def filterDoubleSeq(base: Gen[Seq[Double]]) = base.map(_.filter(x => (math.abs(x) > "1.0E-5".toDouble) && (math.abs(x) < "1.0E5".toDouble))).filter(_.size < 5)
   import Arbitrary.arbitrary
@@ -154,6 +298,7 @@ object CheckLists extends Properties("List") {
   //and the implementation of a reasonable List's implicit is too complicated for testing reason
   lazy val genIntSeqs: Gen[Seq[Int]] = arbitrary[Seq[Int]]
   lazy val genDoubleSeq: Gen[Seq[Double]] = filterDoubleSeq(arbitrary[Seq[Double]])
+  lazy val genSeqOfIntSeqs: Gen[Seq[Seq[Int]]] = arbitrary[Seq[Seq[Int]]]
 
   property("sum of an int list") = forAll(genIntSeqs) {
     (seq: Seq[Int]) => {
@@ -218,6 +363,41 @@ object CheckLists extends Properties("List") {
   property("remove the last element from a List") = forAll(genIntSeqs) {
     (seq: Seq[Int]) => {
       List.init(List(seq: _*)) == List(seq.dropRight(1): _*)
+    }
+  }
+
+  property("fold the list to right and sum its values") = forAll(genIntSeqs) {
+    (seq: Seq[Int]) => {
+      val adder: (Int, Int) => Int = _ + _
+      List.foldRight(List(seq: _*), 0)(adder) == seq.foldRight(0)(adder)
+    }
+  }
+
+  property("fold the list to left and sum its values") = forAll(genIntSeqs) {
+    (seq: Seq[Int]) => {
+      val adder: (Int, Int) => Int = _ + _
+      List.foldLeft(List(seq: _*), 0)(adder) == seq.foldLeft(0)(adder)
+    }
+  }
+
+  property("reverse of a given list") = forAll(genIntSeqs) {
+    (seq: Seq[Int]) => {
+      val l = List(seq: _*)
+      List.reverse(l) == List(seq.reverse: _*)
+    }
+  }
+  
+  property("fold the list to right and sum its values (tail recursive)") = forAll(genIntSeqs) {
+    (seq: Seq[Int]) => {
+      val adder: (Int, Int) => Int = _ + _
+      List.foldRight2(List(seq: _*), 0)(adder) == seq.foldRight(0)(adder)
+    }
+  }
+
+  property("flatten method") = forAll(genSeqOfIntSeqs) {
+    (seq: Seq[Seq[Int]]) => {
+      val ll: List[List[Int]] = List(seq.map((x: Seq[Int]) => List(x: _*)): _*)
+      List.flatten(ll) == List(seq.flatten: _*)
     }
   }
 }

@@ -55,9 +55,27 @@ object List {
    * @tparam A - the parametric type of the given varargs and the result
    * @return - a list of A
    */
-  def apply[A](as: A*): List[A] =
+   //commented out as we need a tail recursive version
+  /*def apply[A](as: A*): List[A] =
     if (as.isEmpty) Nil
     else Cons(as.head, apply(as.tail: _*))
+  */
+  def apply[A](as: A*): List[A] =
+    if (as.isEmpty) Nil
+    else apply(Nil: List[A], as.toSeq.reverse: _*)
+
+  /**
+   * Advanced: Syntactic sugar to construct a List of A from a varargs of A
+   * (it is <b>tailrec optimized</b>)
+   *
+   * @param as - the given varags of A
+   * @tparam A - the parametric type of the given varargs and the result
+   * @return - a list of A
+   */
+  @annotation.tailrec
+  private def apply[A](acc: List[A], as: A*): List[A] =
+    if (as.isEmpty) acc
+    else apply(Cons(as.head, acc), as.tail: _*)
 
   /**
    * Give back the tail of the given list (drop the head of the list)
@@ -185,18 +203,62 @@ object List {
     case Cons(h, t) => Cons(h, init(t))
   }
 
-  //sum and product do the same if we remove the products middle case so we can generalize that
+  /**
+   * General solution for fold a list from left to right.
+   * This direction means that we start from the head element and incrementally
+   * apply the given function on them and on the remaining elements. During the apply we reduce the list
+   * and accumulate the result of the current step.
+   *
+   * @param as - input list of A
+   * @param z - the zero (init) element of the fold operation. It acts as an accumulator
+   * @param f - the function that gets the actual element of the input list and the remaining elements applied
+   * @tparam A - the elements type in the given list
+   * @tparam B - the zero element's and the result type
+   * @return - the result when we apply the f function on all of the elements and reduce the list from left to right
+   */
   def foldRight[A, B](as: List[A], z: B)(f: (A, B) => B): B = as match {
     case Nil => z
     case Cons(h, t) => f(h, foldRight(t, z)(f))
   }
 
+  /**
+   * Sum the given list's elements with the use of foldRight function
+   * 
+   * @param l - the given list of Ints
+   * @return - the sum of the elements of the list
+   */
   def sum2(l: List[Int]) = foldRight(l, 0)((x, y) => x + y)
 
+  /**
+   * Make the product of the given list's elements with the use of foldRight function
+   * 
+   * @param l - the given list of Doubles
+   * @return - the product of the elements of the list
+   */
   def product2(l: List[Double]) = foldRight(l, 1.0)((x, y) => x * y)
 
+  /**
+   * Compute the length of the given list with the use of foldRight
+   *
+   * @param l - list of A elements
+   * @tparam A - the parametric type of the given list
+   * @return - the length of the given list
+   **/
   def length[A](l: List[A]): Int = foldRight(l, 0)((x, y) => 1 + y)
 
+  /**
+   * General solution for fold a list from right to left (optimized for tail recursion).
+   * This direction means that we start from the last element and incrementally
+   * apply the given function on them and on the previous elements. During the apply we reduce the list
+   * and accumulate the result of the current step.
+   *
+   * @param as - input list of A
+   * @param z - the zero (init) element of the fold operation. It acts as an accumulator
+   * @param f - the function that gets the actual element of the input list and the remaining elements applied
+   * @tparam A - the elements type in the given list
+   * @tparam B - the zero element's and the result type
+   * @return - the result when we apply the f function on all of the elements and reduce the list from right to left
+   */
   def foldLeft[A, B](l: List[A], z: B)(f: (B, A) => B): B = {
     @annotation.tailrec
     def loop(ls: List[A], acc: B): B = ls match {
@@ -206,22 +268,83 @@ object List {
     loop(l, z)
   }
 
+  /**
+   * General solution for fold a list from right to left without nested function (optimized for tail recursion).
+   * This direction means that we start from the last element and incrementally
+   * apply the given function on them and on the previous elements. During the apply we reduce the list
+   * and accumulate the result of the current step.
+   *
+   * @param as - input list of A
+   * @param z - the zero (init) element of the fold operation. It acts as an accumulator
+   * @param f - the function that gets the actual element of the input list and the remaining elements applied
+   * @tparam A - the elements type in the given list
+   * @tparam B - the zero element's and the result type
+   * @return - the result when we apply the f function on all of the elements and reduce the list from right to left
+   */
   @annotation.tailrec
   def foldLeft2[A, B](l: List[A], z: B)(f: (B, A) => B): B = l match {
     case Nil => z
     case Cons(h, t) => foldLeft2(t, f(z, h))(f)
   }
 
+  /**
+   * Sum the given list's elements with the use of foldLeft function
+   * 
+   * @param l - the given list of Ints
+   * @return - the sum of the elements of the list
+   */
   def sum3(l: List[Int]) = foldLeft(l, 0)(_ + _)
 
+  /**
+   * Make the product of the given list's elements with the use of foldLeft function
+   * 
+   * @param l - the given list of Ints
+   * @return - the product of the elements of the list
+   */
   def product3(l: List[Int]) = foldLeft(l, 1)(_ * _)
 
+  /**
+   * Reverse the given list's elements with the use of foldLeft function
+   * 
+   * @param l - the given list of Ints
+   * @tparam A - the parametric type of the given list
+   * @return - the reverse of the given list
+   */
   def reverse[A](l: List[A]): List[A] = foldLeft(l, Nil: List[A])((x, y) => Cons(y, x))
 
+  /**
+   * The tail recursive solution for fold a list from left to right (rely on reverse and foldLeft functions).
+   * This direction means that we start from the head element and incrementally
+   * apply the given function on them and on the remaining elements. During the apply we reduce the list
+   * and accumulate the result of the current step.
+   *
+   * @param as - input list of A
+   * @param z - the zero (init) element of the fold operation. It acts as an accumulator
+   * @param f - the function that gets the actual element of the input list and the remaining elements applied
+   * @tparam A - the elements type in the given list
+   * @tparam B - the zero element's and the result type
+   * @return - the result when we apply the f function on all of the elements and reduce the list from left to right
+   */
   def foldRight2[A, B](as: List[A], z: B)(f: (A, B) => B): B = foldLeft(reverse(as), z)((x,y) => f(y,x))
 
+  /**
+   * Append an element to an end of a given list
+   *
+   * @param as - the input list of A elements
+   * @param t - the element that need to be inserted to the end of the given list
+   * @tparam - A the parametric type of the given list
+   * @return - the given list with the appended value at its end 
+   */
   def append[A](as: List[A], t: A): List[A] = foldRight2(as, Cons(t, Nil: List[A]))((x,y) => Cons(x,y))
 
+  /**
+   * Make List of A from the list of the list of A's where the result contain all the A elements (redundantly)
+   * that can be found in the given list
+   *
+   * @param ll - the given list of list of A elements
+   * @tparam A - the elements that the result list contains
+   * @return - the list that contains all the A's that the list of list of A input list contain
+   */
   def flatten[A](ll: List[List[A]]): List[A] = foldLeft2(ll, Nil: List[A])(add)
 
   def add1(ls: List[Int]): List[Int] = foldRight2(ls, Nil:List[Int])((a,b) => Cons(a + 1, b))
