@@ -347,47 +347,140 @@ object List {
    */
   def flatten[A](ll: List[List[A]]): List[A] = foldLeft2(ll, Nil: List[A])(add)
 
+  /**
+   * Increment the integers in the given list and construct
+   * a new list with the tail recursive version of fold right
+   *
+   * Example: List.add1(List(0,1,2,3)) == List(1,2,3,4)
+   *
+   * @param ls - the given list of integers
+   * @return - the list of integers incremented with one
+   */
   def add1(ls: List[Int]): List[Int] = foldRight2(ls, Nil:List[Int])((a,b) => Cons(a + 1, b))
 
+  /**
+   * Map a list of doubles to list of strings. Literally this means it calls the toString
+   * method on each of the elements and construct a new list (not tail recursive)
+   *
+   * @param l - the given list of doubles
+   * @return - the list of strings based on the given list of integers
+   */
   def doubleToString(l: List[Double]): List[String] = {
-    @annotation.tailrec
     def loop(a: List[Double], acc: List[String]): List[String] = a match {
-      case Nil => Nil
-      case Cons(h, t) => loop(t, Cons(h.toString, acc))
+      case Nil => acc
+      case Cons(h, t) => Cons(h.toString(), loop(t, acc))
     }
     loop(l, Nil)
   }
 
+  /**
+   * Map a list of doubles to list of strings. Literally this means it calls the toString
+   * method on each of the elements and construct a new list (uses fold right)
+   *
+   * @param l - the given list of doubles
+   * @return - the list of strings based on the given list of integers
+   */
   def doubleToStringFold(l: List[Double]): List[String] = foldRight2(l, Nil:List[String])((a,b) => Cons(a.toString, b))
 
+  /**
+   * Map a list of A's to list of B's. Literally this means it calls the given f function
+   * on each of the elements and construct a new list
+   *
+   * @param l - the given list of A's
+   * @param f - the transformer function (map an A element to B)
+   * @return - the list of B's based on the given list of A's
+   */
   def map[A, B](l: List[A], f: A => B): List[B] = foldRight2(l, Nil: List[B])((a, b) => Cons(f(a), b))
 
+  /**
+   * Filter the given list's elements based on the given criterion
+   *
+   * @param as - the given list of A's
+   * @param f - the criterion which map A to Boolean
+   * @tparam A - the parameter type of the given list and the result list
+   * @return - all the elements in a new list those fulfill the criterion
+   */
   def filter[A](as: List[A])( f: A => Boolean): List[A] = foldRight2(as, Nil: List[A])((a, b) => if (f(a)) Cons[A](a, b) else b)
 
+  /**
+   * A flatMap that apply the given f transformer function on all of the elements contain the given list
+   *
+   * @param as - the given list of A's
+   * @param f - the tranformer function that map A element to List[B]
+   * @tparam A - the input list's parameter type
+   * @tparam B - the result list's parameter type
+   * @return - the new list that contains all the elements that the input list but with List[B]
+   */
   def flatMap[A, B](as: List[A])(f: A => List[B]): List[B] = foldRight2(as, Nil: List[B])((a: A, b: List[B]) => add(f(a), b))
 
+  /**
+   * A filtering based on a flatMap rather than a map
+   *
+   * @param as - the given list
+   * @param f - the filter function that map an A element to Boolean
+   * @tparam A - the parameter type of the given list
+   * @return - the filtered list
+   */
   def filterFM[A](as: List[A])( f: A => Boolean): List[A] = flatMap(as)(a => if (f(a)) List(a) else List())
 
+  /**
+   * Merge two list of integers. Sum the elements in the first list with the second list corresponding element.
+   * If the input lists' length are not the same then just the corresponding elements summed all the others
+   * can be considered as a removed element
+   *
+   * @param as - the first list of integers
+   * @param bs - the second list of integers
+   * @return - the merged list of integers
+   */
   def mergeLists(as: List[Int], bs: List[Int]): List[Int] = (as, bs) match {
     case (Nil, _) => Nil
     case (_, Nil) => Nil
     case (Cons(h, t), Cons(h2, t2)) => Cons(h + h2, mergeLists(t, t2))
   }
 
+  /**
+   * Merge the first list of A's with the second list of B's in order so in the end we have a list of C
+   *
+   * @param as - the list of A's
+   * @param bs - the list of B's
+   * @param f - the transform function which map from (A, B) pair to C
+   * @tparam A - the first input list's parameter type
+   * @tparam B - the second input list's parameter type
+   * @tparam C - the result list's parameter type
+   * @return - the merged list of C's
+   */
   def zipWith[A, B, C](as: List[A], bs: List[B])(f: (A, B) => C): List[C] = (as, bs) match {
     case (Nil, _) => Nil
     case (_, Nil) => Nil
     case (Cons(h, t), Cons(h2, t2)) => Cons(f(h, h2), zipWith(t, t2)(f))
   }
 
-  def hasSubsequence[A](sup: List[A], sub: List[A]): Boolean = {
-    @annotation.tailrec
-    def loop[A](orig: List[A], s: List[A], acc: Boolean): Boolean = (orig, s) match {
-      case (Cons(h, t), Cons(hs, Nil)) if (h == hs) => true
-      case (Cons(h, t), Cons(hs, ts)) if (h == hs) => loop(t, ts, true)
-      case (Cons(h, t), Cons(hs, ts)) if (h != hs) => if (acc) false else loop(t, Cons(hs, ts), false)
-      case _ => false
-    }
-    loop(sup, sub, false)
+  /**
+   * Check whether the given list of A starts with the given prefix (also a list of A's)
+   *
+   * @param l - the input list of A's
+   * @param prefix - the prefix that we try to match with the beginning of the input list
+   * @tparam A - the type parameter of the given list and the given prefix
+   * @return - true if the given list starts with the given prefix otherwise false
+   */
+  def startsWith[A](l: List[A], prefix: List[A]): Boolean = (l, prefix) match {
+    case (_, Nil) => true
+    case (Cons(h, t), Cons(ph, pt)) if h == ph => startsWith(t, pt)
+    case _ => false
+  }
+
+  /**
+   * Check whether a given list of A's contain a sublist of A's
+   *
+   * @param sup - the given list
+   * @param sub - the given subsequence (sublist)
+   * @tparam A - the parameter type of the lists
+   * @return - true if the given list contains the subsequence otherwise false
+   */
+  def hasSubsequence[A](sup: List[A], sub: List[A]): Boolean = (sup, sub) match {
+    case(_, Nil) => true
+    case (Cons(h, t), Cons(hs, ts)) if (h == hs) => startsWith(sup, sub)
+    case (Cons(h, t), Cons(hs, ts)) if (h != hs) => hasSubsequence(t, sub)
+    case _ => false
   }
 }

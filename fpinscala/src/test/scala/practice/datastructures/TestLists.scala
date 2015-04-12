@@ -1,13 +1,11 @@
 package practice.datastructures
 
-import org.scalacheck.{Arbitrary, Gen, Properties}
 import org.scalacheck.Prop.forAll
-
-import scala.{List, Nil => _}
-import scala.collection.immutable.{List, Nil => _}
-
-import practice.datastructures._
+import org.scalacheck.{Gen, Properties}
 import org.specs2.mutable.Specification
+
+import scala.collection.immutable.{Nil => _}
+import scala.{Nil => _}
 
 /**
  * Created by oltyant on 3/15/15.
@@ -155,7 +153,7 @@ object TestLists extends Specification {
     "give back 5 factorial whenthe List is a range from 1 to 5, the zero element is 1 and the function is the product" in {
       List.foldRight(List(1,2,3,4,5), 1)(_ * _) mustEqual 120
     }
-    "throws a StackOverflowError when we try to make the sum of million element" in {
+    "throw a StackOverflowError when we try to make the sum of million element" in {
       List.foldRight(millionLengthIntList, 0)(_ + _) must throwA[StackOverflowError]
     }
   }
@@ -214,7 +212,7 @@ object TestLists extends Specification {
     "give back 5 factorial whenthe List is a range from 1 to 5, the zero element is 1 and the function is the product" in {
       List.foldLeft(List(1,2,3,4,5), 1)(_ * _) mustEqual 120
     }
-    "does not throw a StackOverflowError when we try to make the sum of million element" in {
+    "not throw a StackOverflowError when we try to make the sum of million element" in {
       List.foldLeft2(millionLengthIntList, 0)(_ + _) must not(throwA[StackOverflowError])
     }
   }
@@ -244,7 +242,7 @@ object TestLists extends Specification {
       val result = List.product3(l)
       result mustEqual 10.0
     }
-    "does not throw StackOverflowError when the given list contains 1 million elements" in {
+    "not throw StackOverflowError when the given list contains 1 million elements" in {
       List.product3(millionLengthIntList) must not(throwA[StackOverflowError])
     }
   }
@@ -266,7 +264,7 @@ object TestLists extends Specification {
     "give back 5 factorial whenthe List is a range from 1 to 5, the zero element is 1 and the function is the product" in {
       List.foldRight2(List(1,2,3,4,5), 1)(_ * _) mustEqual 120
     }
-    "does not throw a StackOverflowError when we try to make the sum of million element" in {
+    "not throw a StackOverflowError when we try to make the sum of million element" in {
       List.foldRight2(millionLengthIntList, 0)(_ + _) must not(throwA[StackOverflowError])
     }
   }
@@ -286,13 +284,57 @@ object TestLists extends Specification {
       List.flatten(List(List(1,2), Nil, List(3,4), Nil)) mustEqual List(1,2,3,4)
     }
   }
+  "The 'add1' method" should {
+    "give back Nil if the input list is Nil" in {
+      List.add1(Nil) == Nil
+    }
+    "give back a list with incremented elements compared to the input list" in {
+      List.add1(List(0,1,2,3,4)) == List(1,2,3,4,5)
+    }
+  }
+  "The 'doubleToString' method" should {
+    "give back Nil when the input list is Nil" in {
+      List.doubleToString(Nil) == Nil
+    }
+    "give back the input list but with the applied toString elements" in {
+      List.doubleToString(List(1.0, 2.0, 3.4)) == List(Seq(1.0, 2.0, 3.4).map(_.toString()): _*)
+    }
+    "throw StackOverflowError when we have one million element in the list" in {
+      List.doubleToString(millionLengthDoubleList) must throwA[StackOverflowError]
+    }
+  }
+  "The 'doubleToStringFold' method" should {
+    "give back Nil when the input list is Nil" in {
+      List.doubleToStringFold(Nil) == Nil
+    }
+    "give back the input list but with the applied toString elements" in {
+      List.doubleToStringFold(List(1.0, 2.0, 3.4)) == List(Seq(1.0, 2.0, 3.4).map(_.toString()): _*)
+    }
+    "not throw StackOverflowError when we have one million element in the list" in {
+      List.doubleToStringFold(millionLengthDoubleList) must not(throwA[StackOverflowError])
+    }
+  }
+  "The 'filter' method" should {
+    "give back Nil when the input list is Nil" in {
+      List.filter(List[Int]())(_ == 0) == Nil
+    }
+    "give back Nil when no one element fulfill the given criterion" in {
+      List.filter(List(1,2,3,4,5))(_ < 0) == Nil
+    }
+    "give back the input list when all of the elements fulfill the given criterion" in {
+      List.filter(List(1,2,3,4,5))(_ > 0) == List(1,2,3,4,5)
+    }
+    "give back the odd elements when the criterion only fulfill to the odd elements" in {
+      List.filter(List(1,2,3,4,5))(_ % 2 == 1) == List(1,3,5)
+    }
+  }
 }
 
 object CheckLists extends Properties("List") {
   //We need to filter out big and small doubles as their product result seems too variadic for the list of really big or really small numbers
   //that is because of the double's byte representation
   def filterDoubleSeq(base: Gen[Seq[Double]]) = base.map(_.filter(x => (math.abs(x) > "1.0E-5".toDouble) && (math.abs(x) < "1.0E5".toDouble))).filter(_.size < 5)
-  import Arbitrary.arbitrary
+  import org.scalacheck.Arbitrary.arbitrary
   //we need to generate seq as the scala's list is hidden
   //the arbirtray's and Gen's builders are implicit's
   //and the implementation of a reasonable List's implicit is too complicated for testing reason
@@ -352,7 +394,7 @@ object CheckLists extends Properties("List") {
     }
   }
 
-  property("concatenate two lists") = forAll(genIntSeqs, genIntSeqs) {
+  property("concatenate two lists") = forAll(genIntSeqs, arbitrary[Seq[Int]]) {
     (seq1: Seq[Int], seq2: Seq[Int]) => {
       val list1 = List(seq1: _*)
       val list2 = List(seq2: _*)
@@ -398,6 +440,72 @@ object CheckLists extends Properties("List") {
     (seq: Seq[Seq[Int]]) => {
       val ll: List[List[Int]] = List(seq.map((x: Seq[Int]) => List(x: _*)): _*)
       List.flatten(ll) == List(seq.flatten: _*)
+    }
+  }
+
+  property("map method") = forAll(genIntSeqs) {
+    (seq: Seq[Int]) => {
+      val l = List(seq: _*)
+      val f: Int => String = _.toString
+      List.map(l, f) == List(seq.map(f): _*)
+    }
+  }
+
+  property("filter method") = forAll(genIntSeqs) {
+    (seq: Seq[Int]) => {
+      val l = List(seq: _*)
+      val criterion: Int => Boolean = _ % 2 == 0
+      List.filter(l)(criterion) == List(seq.filter(criterion): _*)
+    }
+  }
+
+  property("flatMap method") = forAll(genIntSeqs) {
+    (seq: Seq[Int]) => {
+      val l = List(seq: _*)
+      val f: Int => Seq[Int] = x => Seq(x, x * x)
+      val g: Int => List[Int] = x => List(f(x): _*)
+      List.flatMap(l)(g) == List(seq.flatMap(f): _*)
+    }
+  }
+
+  property("Filter with flatMap") = forAll(genIntSeqs) {
+    (seq: Seq[Int]) => {
+      val l = List(seq: _*)
+      val criterion = (x: Int) => x % 2 == 0
+      List.filterFM(l)(criterion) == List(seq.filter(criterion): _*)
+    }
+  }
+
+  property("merge two lists") = forAll(genIntSeqs, arbitrary[Seq[Int]]) {
+    (seq1: Seq[Int], seq2: Seq[Int]) => {
+      val list1 = List(seq1: _*)
+      val list2 = List(seq2: _*)
+      List.mergeLists(list1, list2) == List(seq1.zip(seq2).flatMap(x => Seq(x._1 + x._2)): _*)
+    }
+  }
+
+  property("zipWith method") = forAll(genIntSeqs, arbitrary[Seq[Int]]) {
+    (seq1: Seq[Int], seq2: Seq[Int]) => {
+      val list1 = List(seq1: _*)
+      val list2 = List(seq2: _*)
+      val f: (Int, Int) => String = (x, y) => s"$x+$y"
+      List.zipWith(list1, list2)(f) == List(seq1.zip(seq2).flatMap(e => Seq(f(e._1, e._2))): _*)
+    }
+  }
+
+  property("startsWith method") = forAll(arbitrary[Seq[Int]], genIntSeqs) {
+    (seq1: Seq[Int], seq2: Seq[Int]) => {
+      val list1 = List(seq1: _*)
+      val list2 = List(seq2: _*)
+      List.startsWith(list1, list2) == seq1.startsWith(seq2)
+    }
+  }
+
+  property("hasSubsequence") = forAll(arbitrary[Seq[Int]], genIntSeqs) {
+    (seq1: Seq[Int], seq2: Seq[Int]) => {
+      val list1 = List(seq1: _*)
+      val list2 = List(seq2: _*)
+      List.hasSubsequence(list1, list2) == seq1.containsSlice(seq2)
     }
   }
 }
