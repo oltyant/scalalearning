@@ -40,7 +40,7 @@ lazy val fpinscala_coursera = (
 lazy val reactivescala_coursera = (
   ScalaLearningProject("reactivescala-coursera")
     .dependsOn(fpinscala)
-    .settings()
+    .settings(libraryDependencies += "org.scalacheck" %% "scalacheck" % "latest.release" % Compile)
 )
 
 lazy val impatient = (
