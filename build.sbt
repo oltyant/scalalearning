@@ -1,14 +1,18 @@
+import sbt.Keys._
+
 name := "Scala Learning"
 
 version := "1.0"
 
 scalaVersion := "2.11.5"
 
-crossScalaVersions := Seq("2.10.4", "2.11.5")
+crossScalaVersions := Seq("2.11.5")
 
 def ScalaLearningProject(name: String): Project = {
   Project(name, file(name))
     .settings(
+      scalaVersion := "2.11.5",
+      crossScalaVersions := Seq("2.11.5"),
       version      := "1.0",
       organization := "com.scalalearning",
       resolvers ++= Seq(
@@ -23,12 +27,14 @@ def ScalaLearningProject(name: String): Project = {
       resolvers += Classpaths.sbtPluginReleases,
       ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) },
       (scalastyleFailOnError in Global) := true
-  )
+  ).enablePlugins(CrossPerProjectPlugin)
 }
 
 lazy val fpinscala = (
   ScalaLearningProject("fpinscala")
-    .settings()
+    .settings(
+      scalaVersion := "2.11.5"
+    )
 )
 
 lazy val fpinscala_coursera = (
@@ -39,8 +45,26 @@ lazy val fpinscala_coursera = (
 
 lazy val reactivescala_coursera = (
   ScalaLearningProject("reactivescala-coursera")
-    .dependsOn(fpinscala)
-    .settings(libraryDependencies += "org.scalacheck" %% "scalacheck" % "latest.release" % Compile)
+    .settings(
+      crossScalaVersions := Seq("2.11.5"),
+      libraryDependencies ++= Seq(
+        "org.scalacheck" %% "scalacheck" % "latest.release" % Compile,
+        //"com.netflix.rxjava" % "rxjava-scala" % "0.15.0",
+        "org.json4s" %% "json4s-native" % "3.2.11",
+        "net.databinder.dispatch" %% "dispatch-core" % "0.11.0",
+        "org.scala-lang" % "scala-reflect" % scalaVersion.value,
+        "org.slf4j" % "slf4j-api" % "1.7.5",
+        "org.slf4j" % "slf4j-simple" % "1.7.5",
+        "com.squareup.retrofit" % "retrofit" % "1.0.0",
+        "org.scala-lang.modules" %% "scala-async" % "0.9.2",
+        "io.reactivex" %% "rxscala" % "0.23.0",
+        "io.reactivex" % "rxswing" % "0.21.0",
+        "org.scala-lang.modules" % "scala-swing_2.11.0-RC4" % "1.0.1",
+        "com.typesafe.akka" % "akka-actor_2.11" % "2.3.9",
+        "com.typesafe.akka" % "akka-testkit_2.11" % "2.3.9",
+        "com.typesafe.akka" % "akka-persistence-experimental_2.11" % "2.3.9"
+      )
+    )
 )
 
 lazy val impatient = (
