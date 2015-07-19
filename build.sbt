@@ -11,8 +11,9 @@ crossScalaVersions := Seq("2.11.5")
 def ScalaLearningProject(name: String): Project = {
   Project(name, file(name))
     .settings(
+      scalacOptions += "-target:jvm-1.7",
       scalaVersion := "2.11.5",
-      crossScalaVersions := Seq("2.11.5"),
+      crossScalaVersions := Seq("2.11.5", "2.10.4"),
       version      := "1.0",
       organization := "com.scalalearning",
       resolvers ++= Seq(
