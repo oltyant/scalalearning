@@ -8,6 +8,8 @@ scalaVersion := "2.11.5"
 
 crossScalaVersions := Seq("2.11.5")
 
+jacoco.settings
+
 def ScalaLearningProject(name: String): Project = {
   Project(name, file(name))
     .settings(
