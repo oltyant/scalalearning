@@ -1,4 +1,4 @@
-import MyModule._
+
 
 def factorial(n: Int): Int = {
   def go(n: Int, acc: Int): Int = {
@@ -9,7 +9,6 @@ def factorial(n: Int): Int = {
 }
 
 factorial(5)
-
 def fib(n: Int): Int = {
   @annotation.tailrec
   def go(act: Int, acc2: Int, acc1: Int): Int = {
@@ -21,7 +20,6 @@ def fib(n: Int): Int = {
 }
 
 fib(11)
-
 def findFirst[A](arr: Array[A])(f: A => Boolean): Int = {
   @annotation.tailrec
   def loop(n: Int): Int = {
@@ -35,7 +33,6 @@ def findFirst[A](arr: Array[A])(f: A => Boolean): Int = {
 
 findFirst(Array(1,2,3,4,5))(_ % 2 == 0)
 findFirst(Array("Jack", "The", "Rabbit"))(_ == "Rabbit")
-
 def isSorted[A](arr: Array[A], ordered: (A, A) => Boolean): Boolean = {
   def loop(n: Int): Boolean = {
     if (n + 1 >= arr.length) true
@@ -47,9 +44,27 @@ def isSorted[A](arr: Array[A], ordered: (A, A) => Boolean): Boolean = {
 
 isSorted(Array(-100,2,0,2,78,91), (x: Int, y: Int) => x <= y)
 isSorted[Int](Array(1, -1), _ <= _)
-
 val lessThan = new Function2[Int, Int, Boolean] {
   def apply(x: Int, y: Int): Boolean = x <= y
 }
 
 isSorted(Array(-34,0,1,89), lessThan)
+import _root_.errorhandling.helper._
+import scala.{Option => _, Some => _, None => _}
+
+Option.failingFn(12)
+
+def mean_0(xs: Seq[Double]): Double =  if (xs.isEmpty) throw new ArithmeticException("mean of empty list!") else xs.sum / xs.length
+
+def mean_1(xs: IndexedSeq[Double], onEmpty: Double): Double = {
+  if (xs.isEmpty) onEmpty
+  else xs.sum / xs.length
+}
+
+def mean(xs: Seq[Double]): Option[Double] = {
+  if (xs.isEmpty) None
+  else Some(xs.sum / xs.length)
+}
+
+Option.variance(Seq(1,2,3,4,5,0)) == Option.variance0(Seq(1,2,3,4,5,0))
+
