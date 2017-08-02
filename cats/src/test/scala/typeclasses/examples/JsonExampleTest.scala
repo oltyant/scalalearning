@@ -1,8 +1,9 @@
 package typeclasses.examples
 
 import org.scalatest._
-import typeclasses.examples.JsonExample.{JsonNumber, JsonObject, JsonString, Person}
-import typeclasses.examples.JsonExample.JsonInstances._
+import typeclasses.examples.{JsonNumber, JsonObject, JsonString}
+import typeclasses.examples.Person
+import typeclasses.examples.JsonInstances._
 
 /**
   * Created by oltyan on 2017.06.05.
@@ -13,14 +14,14 @@ class JsonExampleTest extends WordSpec with Matchers {
 
   "'JsonInterface' type class interface" should {
     "convert the given Person to JsonObject" in {
-      val jsonMe = JsonExample.JsonInterface.toJson(me)
+      val jsonMe = JsonInterface.toJson(me)
       assert(jsonMe == result)
     }
   }
 
   "'JsonSyntax' type class syntax" should {
     "convert the given Person to JsonObject" in {
-      import typeclasses.examples.JsonExample.JsonSyntax._
+      import typeclasses.examples.JsonSyntax._
       val jsonMe = me.toJson
       assert(jsonMe == result)
     }

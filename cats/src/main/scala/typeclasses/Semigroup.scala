@@ -36,7 +36,7 @@ object MonoidImplicits {
   //How to use
   implicit def optionMonoid[A : Monoid] = new Monoid[Option[A]] {
     override def combine(a: Option[A], aa: Option[A]): Option[A] = a.flatMap(x => aa.map(y => x.combine(y)))
-    override def empty = None[A]
+    override def empty = None
   }
 
   val example = setMonoid[Int].combine(Set(1,2), Set(3,4))
