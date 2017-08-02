@@ -6,8 +6,6 @@ version := "1.0"
 
 scalaVersion := "2.11.5"
 
-crossScalaVersions := Seq("2.11.5")
-
 jacoco.settings
 
 def ScalaLearningProject(name: String): Project = {
@@ -19,17 +17,17 @@ def ScalaLearningProject(name: String): Project = {
       version      := "1.0",
       organization := "com.scalalearning",
       resolvers ++= Seq(
+        "scoverage-bintray" at "https://dl.bintray.com/sksamuel/sbt-plugins/",
         "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases",
         "sonatype-releases" at "https://oss.sonatype.org/content/repositories/releases/"
       ),
       libraryDependencies ++= Seq(
         "org.specs2" %% "specs2" % "2.4.17" % "test",
-        "org.scalatest" %% "scalatest" % "2.2.4" % "test",
+        "org.scalatest" %% "scalatest" % "3.0.1" % "test",
         "org.scalacheck" %% "scalacheck" % "latest.release" % Test
       ),
       resolvers += Classpaths.sbtPluginReleases,
-      ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) },
-      (scalastyleFailOnError in Global) := true
+      ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) }
   ).enablePlugins(CrossPerProjectPlugin)
 }
 
@@ -112,4 +110,15 @@ lazy val scalaz = (
   ScalaLearningProject("scalaz")
     .dependsOn(fpinscala)
     .settings()
+)
+
+lazy val cats = (
+  ScalaLearningProject("cats")
+      .settings(
+        scalaVersion := "2.12.1",
+        libraryDependencies ++= Seq(
+          "org.typelevel" %% "cats" % "0.9.0",
+          "org.scalatest" %% "scalatest" % "3.0.1" % Test
+        )
+      )
 )
