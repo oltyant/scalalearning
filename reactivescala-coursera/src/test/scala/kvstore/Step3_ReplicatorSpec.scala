@@ -20,7 +20,7 @@ class Step3_ReplicatorSpec extends TestKit(ActorSystem("Step3ReplicatorSpec"))
     with Tools {
 
   override def afterAll(): Unit = {
-    system.shutdown()
+    system.terminate()
   }
 
   test("case1: Replicator should send snapshots when asked to replicate") {

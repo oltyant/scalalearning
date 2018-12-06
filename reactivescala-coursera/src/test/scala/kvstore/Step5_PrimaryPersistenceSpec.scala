@@ -22,7 +22,7 @@ class Step5_PrimaryPersistenceSpec extends TestKit(ActorSystem("Step5PrimaryPers
     with Tools {
 
   override def afterAll(): Unit = {
-    system.shutdown()
+    system.terminate()
   }
 
   test("case1: Primary does not acknowledge updates which have not been persisted") {

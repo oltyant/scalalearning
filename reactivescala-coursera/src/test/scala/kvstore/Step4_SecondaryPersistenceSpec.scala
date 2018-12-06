@@ -21,7 +21,7 @@ class Step4_SecondaryPersistenceSpec extends TestKit(ActorSystem("Step4Secondary
     with Tools {
 
   override def afterAll(): Unit = {
-    system.shutdown()
+    system.terminate()
   }
 
   test("case1: Secondary should not acknowledge snapshots until persisted") {

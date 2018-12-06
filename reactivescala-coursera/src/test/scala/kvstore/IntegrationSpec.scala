@@ -24,7 +24,7 @@ class IntegrationSpec(_system: ActorSystem) extends TestKit(_system)
 
   def this() = this(ActorSystem("ReplicatorSpec"))
 
-  override def afterAll: Unit = system.shutdown()
+  override def afterAll: Unit = system.terminate()
 
   /*
    * Recommendation: write a test case that verifies proper function of the whole system,

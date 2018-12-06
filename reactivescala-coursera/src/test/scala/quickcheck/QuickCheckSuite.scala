@@ -8,6 +8,7 @@ import org.scalatest.junit.JUnitRunner
 import org.scalatest.prop.Checkers
 import org.scalacheck.Arbitrary._
 import org.scalacheck.Prop
+import org.scalacheck.Properties
 import org.scalacheck.Prop._
 
 import org.scalatest.exceptions.TestFailedException
@@ -16,10 +17,12 @@ object QuickCheckBinomialHeap extends QuickCheckHeap with BinomialHeap
 
 @RunWith(classOf[JUnitRunner])
 class QuickCheckSuite extends FunSuite with Checkers {
-  def checkBogus(p: Prop) {
+  def propertiesToProp(properties: Properties) = Prop.all(properties.properties.map(_._2): _*)
+
+  def checkBogus(p: Properties) {
     var ok = false
     try {
-      check(p)
+      check(propertiesToProp(p))
     } catch {
       case e: TestFailedException =>
         ok = true
@@ -28,7 +31,7 @@ class QuickCheckSuite extends FunSuite with Checkers {
   }
 
   test("Binomial heap satisfies properties.") {
-    check(new QuickCheckHeap with BinomialHeap)
+    check(propertiesToProp(new QuickCheckHeap with BinomialHeap))
   }
 
   test("Bogus (1) binomial heap does not satisfy properties.") {

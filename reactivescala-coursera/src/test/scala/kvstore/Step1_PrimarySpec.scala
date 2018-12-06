@@ -19,7 +19,7 @@ class Step1_PrimarySpec extends TestKit(ActorSystem("Step1PrimarySpec"))
     with Tools {
 
   override def afterAll(): Unit = {
-    system.shutdown()
+    system.terminate()
   }
 
   import Arbiter._

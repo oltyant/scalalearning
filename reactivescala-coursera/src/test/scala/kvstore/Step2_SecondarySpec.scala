@@ -21,7 +21,7 @@ class Step2_SecondarySpec extends TestKit(ActorSystem("Step2SecondarySpec"))
     with Tools {
 
   override def afterAll(): Unit = {
-    system.shutdown()
+    system.terminate()
   }
 
   test("case1: Secondary (in isolation) should properly register itself to the provided Arbiter") {

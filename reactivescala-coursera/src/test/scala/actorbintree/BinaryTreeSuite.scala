@@ -16,7 +16,7 @@ class BinaryTreeSuite(_system: ActorSystem) extends TestKit(_system) with FunSui
 
   def this() = this(ActorSystem("BinaryTreeSuite"))
 
-  override def afterAll: Unit = system.shutdown()
+  override def afterAll: Unit = system.terminate()
 
   import actorbintree.BinaryTreeSet._
 

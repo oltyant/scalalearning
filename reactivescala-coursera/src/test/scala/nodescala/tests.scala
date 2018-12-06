@@ -23,7 +23,7 @@ class NodeScalaSuite extends FunSuite {
     assert(Await.result(always, 0 nanos) == 517)
   }
   test("A Future should never be completed") {
-    val never = Future.never[Int]
+    val never = Future.never
 
     try {
       Await.result(never, 1 second)

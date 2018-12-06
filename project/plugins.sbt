@@ -1,9 +1,9 @@
-addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.5.0")
+addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.5.1")
 
-addSbtPlugin("org.scoverage" % "sbt-coveralls" % "1.1.0")
+addSbtPlugin("org.scoverage" % "sbt-coveralls" % "1.2.7")
 
 //addSbtPlugin("org.scalastyle" %% "scalastyle-sbt-plugin" % "0.8.0")
 
-addSbtPlugin("com.eed3si9n" % "sbt-doge" % "0.1.5")
+addSbtPlugin("com.github.sbt" % "sbt-jacoco" % "latest.release")
 
-addSbtPlugin("de.johoop" % "jacoco4sbt" % "2.1.6")
+addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "4.0.0")

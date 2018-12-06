@@ -4,16 +4,29 @@ name := "Scala Learning"
 
 version := "1.0"
 
-scalaVersion := "2.11.5"
+scalaVersion in ThisBuild := "2.12.7"
 
-jacoco.settings
+autoScalaLibrary := false
+
+lazy val  commonSettings = Seq(
+  scalaVersion := "2.12.7",
+  scalacOptions ++= Seq("-target:jvm-1.8", "-Yrangepos"),
+  dependencyOverrides ++= Set(
+    "org.scala-lang" % "scala-compiler" % scalaVersion.value,
+    "org.scala-lang" % "scala-library" % scalaVersion.value,
+    "org.scala-lang" % "scala-reflect" % scalaVersion.value,
+    "org.scala-lang" % "scalap" % scalaVersion.value,
+    "org.specs2" %% "specs2-core" % "4.3.4" % "test",
+    "org.scalatest" %% "scalatest" % "3.0.5" % "test",
+    "org.scalacheck" %% "scalacheck" % "latest.release" % Test
+  )
+)
+
 
 def ScalaLearningProject(name: String): Project = {
   Project(name, file(name))
     .settings(
-      scalacOptions += "-target:jvm-1.7",
-      scalaVersion := "2.11.5",
-      crossScalaVersions := Seq("2.11.5", "2.10.4"),
+      commonSettings,
       version      := "1.0",
       organization := "com.scalalearning",
       resolvers ++= Seq(
@@ -22,8 +35,9 @@ def ScalaLearningProject(name: String): Project = {
         "sonatype-releases" at "https://oss.sonatype.org/content/repositories/releases/"
       ),
       libraryDependencies ++= Seq(
-        "org.specs2" %% "specs2" % "2.4.17" % "test",
-        "org.scalatest" %% "scalatest" % "3.0.1" % "test",
+        "junit" % "junit" % "4.11" % Test,
+        "org.specs2" %% "specs2-core" % "4.3.4" % "test",
+        "org.scalatest" %% "scalatest" % "3.0.5" % "test",
         "org.scalacheck" %% "scalacheck" % "latest.release" % Test
       ),
       resolvers += Classpaths.sbtPluginReleases,
@@ -33,37 +47,35 @@ def ScalaLearningProject(name: String): Project = {
 
 lazy val fpinscala = (
   ScalaLearningProject("fpinscala")
-    .settings(
-      scalaVersion := "2.11.5"
-    )
+    .settings(commonSettings)
 )
 
 lazy val fpinscala_coursera = (
   ScalaLearningProject("fpinscala-coursera")
     .dependsOn(fpinscala)
-    .settings()
+    .settings(commonSettings)
 )
 
 lazy val reactivescala_coursera = (
   ScalaLearningProject("reactivescala-coursera")
     .settings(
-      crossScalaVersions := Seq("2.11.5"),
+      commonSettings,
       libraryDependencies ++= Seq(
         "org.scalacheck" %% "scalacheck" % "latest.release" % Compile,
         //"com.netflix.rxjava" % "rxjava-scala" % "0.15.0",
-        "org.json4s" %% "json4s-native" % "3.2.11",
-        "net.databinder.dispatch" %% "dispatch-core" % "0.11.0",
+        "org.json4s" %% "json4s-native" % "3.6.2",
+        "net.databinder.dispatch" %% "dispatch-core" % "0.13.4",
         "org.scala-lang" % "scala-reflect" % scalaVersion.value,
-        "org.slf4j" % "slf4j-api" % "1.7.5",
-        "org.slf4j" % "slf4j-simple" % "1.7.5",
-        "com.squareup.retrofit" % "retrofit" % "1.0.0",
-        "org.scala-lang.modules" %% "scala-async" % "0.9.2",
-        "io.reactivex" %% "rxscala" % "0.23.0",
-        "io.reactivex" % "rxswing" % "0.21.0",
-        "org.scala-lang.modules" % "scala-swing_2.11.0-RC4" % "1.0.1",
-        "com.typesafe.akka" % "akka-actor_2.11" % "2.3.9",
-        "com.typesafe.akka" % "akka-testkit_2.11" % "2.3.9",
-        "com.typesafe.akka" % "akka-persistence-experimental_2.11" % "2.3.9"
+        "org.slf4j" % "slf4j-api" % "1.7.25",
+        "org.slf4j" % "slf4j-simple" % "1.7.25",
+        "com.squareup.retrofit" % "retrofit" % "1.9.0",
+        "org.scala-lang.modules" %% "scala-async" % "0.9.7",
+        "io.reactivex" %% "rxscala" % "0.26.5",
+        "io.reactivex" % "rxswing" % "0.27.0",
+        "org.scala-lang.modules" %% "scala-swing" % "2.0.3",
+        "com.typesafe.akka" %% "akka-actor" % "2.5.18",
+        "com.typesafe.akka" %% "akka-testkit" % "2.5.18",
+        "com.typesafe.akka" %% "akka-persistence" % "2.5.18"
       )
     )
 )
@@ -72,53 +84,54 @@ lazy val impatient = (
   ScalaLearningProject("impatient")
     .dependsOn(fpinscala)
     .settings(
-      version := "0.1"
+      version := "0.1",
+      commonSettings
     )
 )
 
 lazy val mallonscala = (
   ScalaLearningProject("otherscala")
     .dependsOn(fpinscala)
-    .settings()
+    .settings(commonSettings)
 )
 
 lazy val fpoverjvm = (
   ScalaLearningProject("fpoverjvm")
     .dependsOn(fpinscala)
-    .settings()
+    .settings(commonSettings)
 )
 
 lazy val neophyte = (
   ScalaLearningProject("neophytes-guide")
     .dependsOn(fpinscala)
-    .settings()
+    .settings(commonSettings)
 )
 
 lazy val sbtinaction = (
   ScalaLearningProject("sbtinaction")
     .dependsOn(fpinscala)
-    .settings()
+    .settings(commonSettings)
 )
 
 lazy val akkainaction = (
   ScalaLearningProject("akkainaction")
     .dependsOn(fpinscala)
-    .settings()
+    .settings(commonSettings)
 )
 
 lazy val scalaz = (
   ScalaLearningProject("scalaz")
     .dependsOn(fpinscala)
-    .settings()
+    .settings(commonSettings)
 )
 
 lazy val cats = (
   ScalaLearningProject("cats")
       .settings(
-        scalaVersion := "2.12.1",
+        commonSettings,
         libraryDependencies ++= Seq(
           "org.typelevel" %% "cats" % "0.9.0",
-          "org.scalatest" %% "scalatest" % "3.0.1" % Test
+          "org.scalatest" %% "scalatest" % "3.0.5" % Test
         )
       )
 )
