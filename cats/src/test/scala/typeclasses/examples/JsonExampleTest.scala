@@ -1,8 +1,6 @@
 package typeclasses.examples
 
 import org.scalatest._
-import typeclasses.examples.{JsonNumber, JsonObject, JsonString}
-import typeclasses.examples.Person
 import typeclasses.examples.JsonInstances._
 
 /**

@@ -21,7 +21,7 @@ class TestOption extends FlatSpec with GivenWhenThen {
     Given("the input Option one")
     val op = Some("one")
     When("we map it with toInt function")
-    val res = op.map((x: String) => try { Some(x.toInt) } catch {case _ => None}).getOrElse(None)
+    val res = op.map((x: String) => try { Some(x.toInt) } catch { case _ : Throwable => None} ).getOrElse(None)
     Then("It should give back None")
     assert(res == None)
   }
@@ -39,7 +39,7 @@ class TestOption extends FlatSpec with GivenWhenThen {
     Given("the input Some(1)")
     val op: Option[Int] = Some(1)
     When("we flatmap it with divide by zero")
-    val res: Option[Int] = op.flatMap((x : Int) => try { Some(x / 0) } catch { case _ => None})
+    val res: Option[Int] = op.flatMap((x : Int) => try { Some(x / 0) } catch { case _ : Throwable => None})
     Then("It should give back None")
     assert(res == None)
   }
@@ -57,7 +57,7 @@ class TestOption extends FlatSpec with GivenWhenThen {
     Given("the input Some(1)")
     val op: Option[Int] = Some(1)
     When("we flatmap it with divide by zero")
-    val res = op.flatMap((x : Int) => try { Some(x / 0) } catch { case _ => None}).getOrElse(0)
+    val res = op.flatMap((x : Int) => try { Some(x / 0) } catch { case _ : Throwable => None}).getOrElse(0)
     Then("It should give back 0")
     assert(res == 0)
   }
@@ -75,7 +75,7 @@ class TestOption extends FlatSpec with GivenWhenThen {
     Given("the input Some(1)")
     val op: Option[Int] = Some(1)
     When("we flatmap it with divide by zero and orElse Some(-1)")
-    val res = op.flatMap((x : Int) => try { Some(x / 0) } catch { case _ => None}).orElse(Some(-1))
+    val res = op.flatMap((x : Int) => try { Some(x / 0) } catch { case _ : Throwable => None}).orElse(Some(-1))
     Then("It should give back Some(-1)")
     assert(res == Some(-1))
   }
@@ -166,7 +166,7 @@ class TestOption extends FlatSpec with GivenWhenThen {
     Given("the input List('12','1','-1','-2)'")
     val as = List("12","1","-1","-2")
     And("a function which map String into Int")
-    val f: String => Option[Int] = x => try { Some(x.toInt) } catch {case _ => None}
+    val f: String => Option[Int] = x => try { Some(x.toInt) } catch {case _ : Throwable => None}
     When("we call 'traverse' with the input list")
     val res = Option.traverse[String, Int](as)(f)
     Then("The result must be Some(List(12,1,-1,-2))")
@@ -177,7 +177,7 @@ class TestOption extends FlatSpec with GivenWhenThen {
     Given("the input List('12','1a','-1','-2)'")
     val as = List("12","1a","-1","-2")
     And("a function which map String into Int")
-    val f: String => Option[Int] = x => try { Some(x.toInt) } catch {case _ => None}
+    val f: String => Option[Int] = x => try { Some(x.toInt) } catch {case _ : Throwable => None}
     When("we call 'traverse' with the input list")
     val res = Option.traverse[String, Int](as)(f)
     Then("The result must be None")

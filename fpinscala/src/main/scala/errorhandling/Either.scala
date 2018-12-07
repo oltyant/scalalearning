@@ -71,12 +71,12 @@ object Either {
   sealed class Age(val value: Int)
 
   def mkName(name: String): Either[String, Name] = {
-    if (name == null || name.isEmpty) Left("Name is empty or null")
+    if (name.isEmpty) Left("Name is empty or null")
     else Right(new Name(name))
   }
 
   def mkAge(age: Int): Either[String, Age] = {
-    if (age == null || age <= 0) Left("Age is not valid")
+    if (age <= 0) Left("Age is not valid")
     else Right(new Age(age))
   }
 

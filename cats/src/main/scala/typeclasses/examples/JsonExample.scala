@@ -15,28 +15,33 @@ trait JsonWriter[A] {
 }
 
 object JsonInstances {
-  implicit val stringJsonWriter = new JsonWriter[String] {
+  implicit object stringJsonWriter extends JsonWriter[String] {
     override def write(value: String) = JsonString(value)
   }
-  implicit val booleanJsonWriter = new JsonWriter[Boolean] {
+  implicit object booleanJsonWriter extends JsonWriter[Boolean] {
     override def write(value: Boolean) = JsonBoolean(value)
   }
-  implicit val intJsonWriter = new JsonWriter[Int] {
+  implicit object intJsonWriter extends  JsonWriter[Int] {
     override def write(value: Int) = JsonNumber(value)
   }
-  implicit val longJsonWriter = new JsonWriter[Long] {
+  implicit object longJsonWriter extends JsonWriter[Long] {
     override def write(value: Long) = JsonNumber(value)
   }
-  implicit val doubleJsonWriter = new JsonWriter[Double] {
+  implicit object doubleJsonWriter extends JsonWriter[Double] {
     override def write(value: Double) = JsonNumber(value)
   }
-  implicit val floatJsonWriter = new JsonWriter[Float] {
+  implicit object floatJsonWriter extends JsonWriter[Float] {
     override def write(value: Float) = JsonNumber(value)
   }
-  implicit val personJsonWriter = new JsonWriter[Person] {
-    override def write(value: Person) = JsonObject(Map("name" -> JsonString(value.name),
-                                                      "id" -> JsonNumber(value.id),
-                                                      "email" -> JsonString(value.email)))
+  implicit object personJsonWriter extends JsonWriter[Person] {
+    override def write(value: Person) =
+      JsonObject(
+        Map(
+          "name" -> JsonString(value.name),
+          "id" -> JsonNumber(value.id),
+          "email" -> JsonString(value.email)
+        )
+      )
   }
 }
 
